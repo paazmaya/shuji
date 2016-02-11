@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "Reverse engineering JavaScript sources from sourcemaps",
   "main": "index.js",
+  "bin": "bin/shuji.js",
   "scripts": {
     "test": "npm run lint",
     "lint": "eslint -c .eslintrc.json index.js bin/shuji.js"
@@ -12,7 +13,9 @@
     "url": "git+ssh://git@github.com/paazmaya/shuji.git"
   },
   "keywords": [
-    "sourcemap"
+    "sourcemap",
+    "reverse",
+    "engineering"
   ],
   "files": [
     "bin",
@@ -26,6 +29,8 @@
   },
   "homepage": "https://github.com/paazmaya/shuji#readme",
   "dependencies": {
+    "fs-extra": "^0.26.5",
+    "optionator": "^0.8.1",
     "source-map": "^0.5.3"
   },
   "devDependencies": {
