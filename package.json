@@ -1,0 +1,34 @@
+{
+  "name": "shuji",
+  "version": "0.1.0",
+  "description": "Reverse engineering JavaScript sources from sourcemaps",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run lint",
+    "lint": "eslint -c .eslintrc.json index.js bin/shuji.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/paazmaya/shuji.git"
+  },
+  "keywords": [
+    "sourcemap"
+  ],
+  "files": [
+    "bin",
+    "README.md",
+    "index.js"
+  ],
+  "author": "Juga Paazmaya <paazmaya@yahoo.com> (http://www.paazmaya.fi)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paazmaya/shuji/issues"
+  },
+  "homepage": "https://github.com/paazmaya/shuji#readme",
+  "dependencies": {
+    "source-map": "^0.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^1.10.3"
+  }
+}
