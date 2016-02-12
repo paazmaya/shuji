@@ -51,6 +51,8 @@ uglifyjs stretchy.js --compress --mangle \
 --source-map-include-sources
 
 sass stretchy.scss:stretchy.css
+
+sass stretchy.scss:stretchy.css --sourcemap=inline
 ```
 
 
