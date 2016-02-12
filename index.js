@@ -13,17 +13,33 @@ const path = require('path');
 
 const sourceMap = require('source-map');
 
-module.exports = (input) => {
+/**
+ * @param {string} input Contents of the sourcemap file
+ * @param {object} options Object {verbose: boolean}
+ *
+ * @returns {object} Source contents mapped to file names
+ */
+module.exports = (input, options) => {
 
   const consumer = new sourceMap.SourceMapConsumer(input);
 
   const map = {};
 
   if (consumer.hasContentsOfAllSources()) {
+    if (options.verbose) {
+      console.log('All sources were included in the sourcemap');
+    }
+
     consumer.sources.forEach((source) => {
       const contents = consumer.sourceContentFor(source);
       map[path.basename(source)] = contents;
     });
   }
+  else {
+    if (options.verbose) {
+      console.log('Not all sources were included in the sourcemap');
+    }
+  }
+
   return map;
 };

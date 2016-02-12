@@ -2,3 +2,4 @@ node_modules
 *.lcov
 *.log
 tmp
+.sass-cache

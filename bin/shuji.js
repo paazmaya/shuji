@@ -141,14 +141,14 @@ if (opts.verbose) {
   console.log(`Going to process total of ${fileList.length} files`);
 }
 
-const outdir = path.resolve(opts.outputDir);
+const outputDir = path.resolve(opts.outputDir);
 
 if (opts.verbose) {
-  console.log(`Outputting to directory: ${outdir}`);
+  console.log(`Outputting to directory: ${outputDir}`);
 }
 
-if (!fs.existsSync(outdir)) {
-  fs.mkdirSync(outdir);
+if (!fs.existsSync(outputDir)) {
+  fs.ensureDirSync(outputDir);
 }
 
 // Process then...
@@ -158,12 +158,27 @@ fileList.forEach((filepath) => {
   }
 
   const input = fs.readFileSync(filepath, 'utf8'),
-    output = shuji(input);
+    outdir = path.join(outputDir, path.dirname(filepath)),
+    output = shuji(input, {
+      verbose: typeof opts.verbose === 'boolean' ? opts.verbose : false
+    });
+
+  fs.ensureDirSync(outdir);
 
   Object.keys(output).forEach((item) => {
-    fs.writeFileSync(item, output[item], 'utf8');
+    const outfile = path.join(outdir, item);
+
+    if (opts.verbose) {
+      console.log(`Writing to file ${outfile}`);
+    }
+
+    if (fs.existsSync(outfile)) {
+      console.error('File existed, skipping!');
+    }
+    else {
+      fs.writeFileSync(outfile, output[item], 'utf8');
+    }
   });
 
-  //fs.ensureDirSync(path.dirname(outpath));
 });
 

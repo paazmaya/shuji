@@ -31,11 +31,33 @@ shuji [options] <file|directory>
   -M, --match String       Regular expression for matching and filtering files - default: \.map$
   -r, --recursive          Recursively search matching files
 
-Version 0.1.0
+Version 0.2.0
 ```
+
+
+## Testing
+
+Test files are generated with [UglifyJS2](https://github.com/mishoo/UglifyJS2) and
+[`sass`](http://sass-lang.com)
+by using files from the [stretchy](https://github.com/LeaVerou/stretchy) project,
+with the following commands:
+
+```sh
+uglifyjs stretchy.js --compress --mangle \
+ -o stretchy.min.js --source-map stretchy.min.js.map
+
+uglifyjs stretchy.js --compress --mangle \
+ -o stretchy.min.js --source-map stretchy-with-sources.min.js.map \
+--source-map-include-sources
+
+sass stretchy.scss:stretchy.css
+```
+
 
 ## Version history
 
+* `v0.2.0` (2016-02-)
+    - Do not overwrite existing files
 * `v0.1.0` (2016-02-12)
     - Initial release which can make it happen
 

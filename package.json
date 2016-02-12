@@ -1,7 +1,7 @@
 {
   "name": "shuji",
   "version": "0.1.0",
-  "description": "Reverse engineering JavaScript sources from sourcemaps",
+  "description": "Reverse engineering JavaScript and CSS sources from sourcemaps",
   "main": "index.js",
   "bin": "bin/shuji.js",
   "scripts": {
