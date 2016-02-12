@@ -2,6 +2,7 @@
 
 > Reverse engineering JavaScript and CSS sources from sourcemaps
 
+[![Build Status](https://travis-ci.org/paazmaya/shuji.svg?branch=master)](https://travis-ci.org/paazmaya/shuji)
 
 ## Getting started
 
