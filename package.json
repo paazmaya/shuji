@@ -5,8 +5,9 @@
   "main": "index.js",
   "bin": "bin/shuji.js",
   "scripts": {
-    "test": "npm run lint",
-    "lint": "eslint -c .eslintrc.json index.js bin/shuji.js"
+    "lint": "eslint -c .eslintrc.json index.js bin/shuji.js",
+    "test": "node tests/index_tape.js && node tests/cli_tape.js && rm -rf tmp",
+    "coverage": "nyc npm test && nyc report --reporter=text-lcov > coverage.lcov | codecov"
   },
   "repository": {
     "type": "git",
@@ -38,6 +39,9 @@
   },
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta6",
-    "eslint": "^1.10.3"
+    "codecov": "^1.0.1",
+    "eslint": "^1.10.3",
+    "nyc": "^5.6.0",
+    "tape": "^4.4.0"
   }
 }

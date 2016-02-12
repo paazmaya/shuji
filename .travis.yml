@@ -1,0 +1,11 @@
+sudo: false
+language: node_js
+node_js:
+  - "4.2"
+  - "5"
+cache:
+  directories:
+    - node_modules
+matrix:
+  fast_finish: true
+after_success: "npm run coverage"
