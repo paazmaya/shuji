@@ -27,6 +27,9 @@
   "bugs": {
     "url": "https://github.com/paazmaya/shuji/issues"
   },
+  "engines": {
+    "node": ">=4.2.0"
+  },
   "homepage": "https://github.com/paazmaya/shuji#readme",
   "dependencies": {
     "fs-extra": "^0.26.5",
@@ -34,6 +37,7 @@
     "source-map": "^0.5.3"
   },
   "devDependencies": {
+    "babel-eslint": "^5.0.0-beta6",
     "eslint": "^1.10.3"
   }
 }

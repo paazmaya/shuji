@@ -4,7 +4,7 @@
  * shuji (周氏)
  * https://github.com/paazmaya/shuji
  *
- * Reverse engineering JavaScript sources from sourcemaps
+ * Reverse engineering JavaScript and CSS sources from sourcemaps
  *
  * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (http://www.paazmaya.fi)
  * Licensed under the MIT license
@@ -158,11 +158,9 @@ fileList.forEach((filepath) => {
   }
 
   const input = fs.readFileSync(filepath, 'utf8'),
-    output = shuji(input),
-    outpath = path.join(outdir, filepath);
+    output = shuji(input);
 
   Object.keys(output).forEach((item) => {
-    const name = filepath + '_' + item;
     fs.writeFileSync(item, output[item], 'utf8');
   });
 

@@ -1,6 +1,6 @@
 # shuji (周氏)
 
-> Reverse engineering JavaScript sources from sourcemaps
+> Reverse engineering JavaScript and CSS sources from sourcemaps
 
 
 ## Getting started
