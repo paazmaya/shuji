@@ -35,10 +35,8 @@ module.exports = (input, options) => {
       map[path.basename(source)] = contents;
     });
   }
-  else {
-    if (options.verbose) {
-      console.log('Not all sources were included in the sourcemap');
-    }
+  else if (options.verbose) {
+    console.log('Not all sources were included in the sourcemap');
   }
 
   return map;

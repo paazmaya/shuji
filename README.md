@@ -3,6 +3,8 @@
 > Reverse engineering JavaScript and CSS sources from sourcemaps
 
 [![Build Status](https://travis-ci.org/paazmaya/shuji.svg?branch=master)](https://travis-ci.org/paazmaya/shuji)
+[![codecov.io](https://codecov.io/github/paazmaya/shuji/coverage.svg?branch=master)](https://codecov.io/github/paazmaya/shuji?branch=master)
+[![Dependency Status](https://gemnasium.com/paazmaya/shuji.svg)](https://gemnasium.com/paazmaya/shuji)
 
 ## Getting started
 

@@ -1,6 +1,6 @@
 {
   "name": "shuji",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Reverse engineering JavaScript and CSS sources from sourcemaps",
   "main": "index.js",
   "bin": "bin/shuji.js",
@@ -40,7 +40,7 @@
   "devDependencies": {
     "babel-eslint": "^5.0.0-beta6",
     "codecov": "^1.0.1",
-    "eslint": "^1.10.3",
+    "eslint": "^2.0.0",
     "nyc": "^5.6.0",
     "tape": "^4.4.0"
   }
