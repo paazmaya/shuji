@@ -67,6 +67,6 @@ sass stretchy.scss:stretchy.css --sourcemap=inline
 
 ## License
 
-Copyright (c) [Juga Paazmaya](http://www.paazmaya.fi) <paazmaya@yahoo.com>
+Copyright (c) [Juga Paazmaya](http://paazmaya.fi) <paazmaya@yahoo.com>
 
 Licensed under [the MIT license](./LICENSE).
