@@ -31,7 +31,7 @@ catch (error) {
 }
 
 const optsParser = optionator({
-  prepend: `${pkg.name} [options] <file|directory>`,
+  prepend: `Usage ${pkg.name} [options] <file|directory>`,
   append: `Version ${pkg.version}`,
   options: [
     {
@@ -78,6 +78,8 @@ const optsParser = optionator({
     }
   ]
 });
+
+console.log(`${pkg.name} - ${pkg.description}`);
 
 let opts;
 
