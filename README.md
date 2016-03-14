@@ -24,7 +24,8 @@ version to be `4.2.0`, which is the Long Term Support (LTS) version.
 The output of `shuji --help` pretty much covers all the options:
 
 ```sh
-shuji [options] <file|directory>
+shuji - Reverse engineering JavaScript and CSS sources from sourcemaps
+Usage: shuji [options] <file|directory>
 
   -h, --help               Help and usage instructions
   -V, --version            Version number
@@ -50,7 +51,7 @@ uglifyjs stretchy.js --compress --mangle \
 
 uglifyjs stretchy.js --compress --mangle \
  -o stretchy.min.js --source-map stretchy-with-sources.min.js.map \
---source-map-include-sources
+ --source-map-include-sources
 
 sass stretchy.scss:stretchy.css
 
@@ -60,8 +61,8 @@ sass stretchy.scss:stretchy.css --sourcemap=inline
 
 ## Version history
 
-* `v0.2.0` (2016-02-)
-    - Do not overwrite existing files
+* `v0.2.0` (2016-03-14)
+    - Do not overwrite existing files, instead skip them
 * `v0.1.0` (2016-02-12)
     - Initial release which can make it happen
 

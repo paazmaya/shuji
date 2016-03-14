@@ -31,7 +31,7 @@ catch (error) {
 }
 
 const optsParser = optionator({
-  prepend: `Usage ${pkg.name} [options] <file|directory>`,
+  prepend: `Usage: ${pkg.name} [options] <file|directory>`,
   append: `Version ${pkg.version}`,
   options: [
     {
@@ -79,8 +79,6 @@ const optsParser = optionator({
   ]
 });
 
-console.log(`${pkg.name} - ${pkg.description}`);
-
 let opts;
 
 try {
@@ -95,6 +93,8 @@ if (opts.version) {
   console.log((opts.verbose ? pkg.name + ' v' : '') + pkg.version);
   process.exit();
 }
+
+console.log(`${pkg.name} - ${pkg.description}`);
 
 if (opts.help || opts._.length === 0) {
   console.log(optsParser.generateHelp());
