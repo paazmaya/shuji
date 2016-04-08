@@ -38,10 +38,10 @@
     "source-map": "^0.5.3"
   },
   "devDependencies": {
-    "babel-eslint": "^6.0.0",
+    "babel-eslint": "^6.0.2",
     "codecov": "^1.0.1",
-    "eslint": "^2.5.3",
-    "nyc": "^6.1.1",
+    "eslint": "^2.7.0",
+    "nyc": "^6.2.1",
     "tape": "^4.5.1"
   }
 }
