@@ -61,6 +61,8 @@ sass stretchy.scss:stretchy.css --sourcemap=inline
 
 ## Version history
 
+* `v0.3.0` (2016-05)
+    - Start using shared ESLint configuration #1
 * `v0.2.0` (2016-03-14)
     - Do not overwrite existing files, instead skip them
 * `v0.1.0` (2016-02-12)
