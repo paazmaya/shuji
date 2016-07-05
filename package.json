@@ -41,7 +41,7 @@
     "babel-eslint": "^6.1.0",
     "codecov": "^1.0.1",
     "eslint": "^3.0.0",
-    "eslint-config-paazmaya": "^2.1.0",
+    "eslint-config-paazmaya": "^2.2.0",
     "nyc": "^6.6.1",
     "tape": "^4.6.0"
   }
