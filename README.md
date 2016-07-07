@@ -34,7 +34,7 @@ Usage: shuji [options] <file|directory>
   -M, --match String       Regular expression for matching and filtering files - default: \.map$
   -r, --recursive          Recursively search matching files
 
-Version 0.2.0
+Version 0.3.0
 ```
 
 
@@ -61,8 +61,9 @@ sass stretchy.scss:stretchy.css --sourcemap=inline
 
 ## Version history
 
-* `v0.3.0` (2016-05)
+* `v0.3.0` (2016-07-07)
     - Start using shared ESLint configuration #1
+    - Test against Node.js v6
 * `v0.2.0` (2016-03-14)
     - Do not overwrite existing files, instead skip them
 * `v0.1.0` (2016-02-12)
@@ -70,6 +71,6 @@ sass stretchy.scss:stretchy.css --sourcemap=inline
 
 ## License
 
-Copyright (c) [Juga Paazmaya](http://paazmaya.fi) <paazmaya@yahoo.com>
+Copyright (c) [Juga Paazmaya](https://paazmaya.fi) <paazmaya@yahoo.com>
 
 Licensed under [the MIT license](./LICENSE).

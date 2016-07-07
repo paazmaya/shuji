@@ -3,3 +3,4 @@ node_modules
 *.log
 tmp
 .sass-cache
+.nyc_output

@@ -1,6 +1,6 @@
 {
   "name": "shuji",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Reverse engineering JavaScript and CSS sources from sourcemaps",
   "main": "index.js",
   "bin": "bin/shuji.js",
@@ -23,7 +23,7 @@
     "README.md",
     "index.js"
   ],
-  "author": "Juga Paazmaya <paazmaya@yahoo.com> (http://paazmaya.fi)",
+  "author": "Juga Paazmaya <paazmaya@yahoo.com> (https://paazmaya.fi)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/paazmaya/shuji/issues"
