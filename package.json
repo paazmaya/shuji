@@ -39,10 +39,10 @@
     "source-map": "^0.5.6"
   },
   "devDependencies": {
-    "babel-eslint": "^6.1.1",
+    "babel-eslint": "^6.1.2",
     "codecov": "^1.0.1",
     "eslint": "^3.0.1",
-    "eslint-config-paazmaya": "^2.2.0",
+    "eslint-config-paazmaya": "^2.3.0",
     "nyc": "^7.0.0",
     "tape": "^4.6.0"
   }
