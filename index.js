@@ -23,8 +23,7 @@ module.exports = (input, options) => {
 
   const consumer = new sourceMap.SourceMapConsumer(input);
 
-  const map = {
-  };
+  const map = {};
 
   if (consumer.hasContentsOfAllSources()) {
     if (options.verbose) {
