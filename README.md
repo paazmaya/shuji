@@ -3,6 +3,7 @@
 > Reverse engineering JavaScript and CSS sources from sourcemaps
 
 [![Build Status](https://travis-ci.org/paazmaya/shuji.svg?branch=master)](https://travis-ci.org/paazmaya/shuji)
+[![Windows build status](https://ci.appveyor.com/api/projects/status/pfplexeaehjvwel3/branch/master?svg=true)](https://ci.appveyor.com/project/paazmaya/shuji/branch/master)
 [![codecov](https://codecov.io/gh/paazmaya/shuji/branch/master/graph/badge.svg)](https://codecov.io/gh/paazmaya/shuji)
 [![Dependency Status](https://gemnasium.com/paazmaya/shuji.svg)](https://gemnasium.com/paazmaya/shuji)
 
@@ -17,7 +18,6 @@ npm install --global shuji
 
 Please note that this tool requires the minimum [Node.js](https://nodejs.org/en/)
 version to be `4.2.0`, which is the Long Term Support (LTS) version.
-
 
 ## Command line options
 
@@ -36,7 +36,6 @@ Usage: shuji [options] <file|directory>
 
 Version 0.3.0
 ```
-
 
 ## Testing
 
@@ -57,7 +56,6 @@ sass stretchy.scss:stretchy.css
 
 sass stretchy.scss:stretchy.css --sourcemap=inline
 ```
-
 
 ## Version history
 
