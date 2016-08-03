@@ -1,23 +1,31 @@
-# http://www.appveyor.com/docs/lang/nodejs-iojs
-# Test against this version of Node.js
-environment:
-  nodejs_version: "4.2"
+# http://www.appveyor.com/docs/appveyor-yml
 
-# Install scripts. (runs after repo cloning)
+environment:
+  matrix:
+    - nodejs_version: "6"
+    - nodejs_version: "4.2"
+
+version: "{build}-{branch}"
+
+init:
+  - git config --global core.longpaths true
+
+clone_depth: 1
+
+matrix:
+  fast_finish: true
+
+cache:
+  - node_modules
+
 install:
-  # Get the latest stable version of Node.js or io.js
   - ps: Install-Product node $env:nodejs_version
-  # install modules
   - npm install
 
-# Post-install test scripts.
 test_script:
-  # Output useful info for debugging.
   - node --version
   - npm --version
-  # run tests
   - npm run lint
   - npm test
 
-# Don't actually build.
 build: off
