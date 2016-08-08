@@ -57,8 +57,14 @@ sass stretchy.scss:stretchy.css
 sass stretchy.scss:stretchy.css --sourcemap=inline
 ```
 
-## Version history
+Unit tests are written with [`tape`](https://github.com/substack/tape) and can be executed with `npm test`.
+Code coverage is inspected with [`nyc`](https://github.com/istanbuljs/nyc) and
+can be executed with `npm run coverage` after running `npm test`.
+Please make sure it is over 90% at all times.
 
+## Version history
+* `v0.3.1` (2016-08-08)
+    - Test also in Windows, at [AppVeyor](https://ci.appveyor.com/project/paazmaya/shuji)
 * `v0.3.0` (2016-07-07)
     - Start using shared ESLint configuration #1
     - Test against Node.js v6
