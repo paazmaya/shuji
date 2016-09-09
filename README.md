@@ -62,7 +62,19 @@ Code coverage is inspected with [`nyc`](https://github.com/istanbuljs/nyc) and
 can be executed with `npm run coverage` after running `npm test`.
 Please make sure it is over 90% at all times.
 
+## Contributing
+
+["A Beginner's Guide to Open Source: The Best Advice for Making your First Contribution"](http://hf.heidilabs.com/blog/a-beginners-guide-to-open-source-making-your-first-contribution).
+
+[Also there is a blog post about "45 Github Issues Dos and Don’ts"](https://davidwalsh.name/45-github-issues-dos-donts).
+
+Linting is done with [ESLint](http://eslint.org) and can be executed with `npm run lint`.
+There should be no errors appearing after any JavaScript file changes.
+
+Please note that any features or changed will not be merged without working unit tests.
+
 ## Version history
+
 * `v0.3.1` (2016-08-08)
     - Test also in Windows, at [AppVeyor](https://ci.appveyor.com/project/paazmaya/shuji)
 * `v0.3.0` (2016-07-07)
