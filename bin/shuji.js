@@ -9,6 +9,7 @@
  * Copyright (c) Juga Paazmaya <paazmaya@yahoo.com> (https://paazmaya.fi)
  * Licensed under the MIT license
  */
+
 'use strict';
 
 const fs = require('fs-extra'),
@@ -90,7 +91,9 @@ catch (error) {
 }
 
 if (opts.version) {
-  console.log((opts.verbose ? pkg.name + ' v' : '') + pkg.version);
+  console.log((opts.verbose ?
+    pkg.name + ' v' :
+    '') + pkg.version);
   process.exit();
 }
 
@@ -162,7 +165,9 @@ fileList.forEach((filepath) => {
   const input = fs.readFileSync(filepath, 'utf8'),
     outdir = path.join(outputDir, path.dirname(filepath)),
     output = shuji(input, {
-      verbose: typeof opts.verbose === 'boolean' ? opts.verbose : false
+      verbose: typeof opts.verbose === 'boolean' ?
+        opts.verbose :
+        false
     });
 
   fs.ensureDirSync(outdir);
@@ -183,4 +188,3 @@ fileList.forEach((filepath) => {
   });
 
 });
-
