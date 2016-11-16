@@ -33,7 +33,7 @@ module.exports = (input, options) => {
 
     consumer.sources.forEach((source) => {
       const contents = consumer.sourceContentFor(source);
-      map[path.basename(source)] = contents;
+      map[source] = contents;
     });
   }
   else if (options.verbose) {
