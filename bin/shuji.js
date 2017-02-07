@@ -178,12 +178,7 @@ fileList.forEach((filepath) => {
       console.log(`Writing to file ${outfile}`);
     }
 
-    if (fs.existsSync(outfile)) {
-      console.error('File existed, skipping!');
-    }
-    else {
-      fs.writeFileSync(outfile, output[item], 'utf8');
-    }
+    fs.writeFileSync(outfile, output[item], 'utf8');
   });
 
 });
