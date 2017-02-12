@@ -17,7 +17,7 @@ npm install --global shuji
 ```
 
 Please note that this tool requires the minimum [Node.js](https://nodejs.org/en/)
-version to be `4.2.0`, which is the Long Term Support (LTS) version.
+version to be `6.9.5`, which is the Long Term Support (LTS) version.
 
 ## Command line options
 
