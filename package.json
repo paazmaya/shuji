@@ -5,7 +5,7 @@
   "main": "index.js",
   "bin": "bin/shuji.js",
   "scripts": {
-    "lint": "eslint -c .eslintrc.json index.js bin/shuji.js",
+    "lint": "eslint index.js bin/shuji.js",
     "test": "nyc --exclude tests tape tests/*_test.js && rm -rf tmp",
     "coverage": "nyc --exclude tests report --reporter=text-lcov > coverage.lcov && codecov"
   },
@@ -34,16 +34,16 @@
   },
   "homepage": "https://github.com/paazmaya/shuji#readme",
   "dependencies": {
-    "fs-extra": "^2.1.2",
+    "fs-extra": "^3.0.0",
     "optionator": "^0.8.2",
     "source-map": "^0.5.6"
   },
   "devDependencies": {
-    "babel-eslint": "^7.2.1",
+    "babel-eslint": "^7.2.3",
     "codecov": "^2.1.0",
-    "eslint": "^3.18.0",
+    "eslint": "^3.19.0",
     "eslint-config-paazmaya": "^3.2.0",
-    "nyc": "^10.2.0",
+    "nyc": "^10.3.0",
     "tape": "^4.6.3"
   }
 }
