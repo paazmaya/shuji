@@ -7,6 +7,10 @@
 [![codecov](https://codecov.io/gh/paazmaya/shuji/branch/master/graph/badge.svg)](https://codecov.io/gh/paazmaya/shuji)
 [![Dependency Status](https://gemnasium.com/paazmaya/shuji.svg)](https://gemnasium.com/paazmaya/shuji)
 
+## Background for the name
+
+The name of the project is for honouring the legacy of a certain master from the Ryukyu archipelago who contributed to the martial arts that we today know as **karate** and **ryukyu kobujutsu**.
+
 ## Getting started
 
 Install the `shuji` command line utility globally with [npm](https://www.npmjs.com/).
