@@ -79,15 +79,17 @@ Please note that any features or changed will not be merged without working unit
 
 ## Version history
 
+* `v0.4.0` (2017-07)
+  - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
 * `v0.3.1` (2016-08-08)
-    - Test also in Windows, at [AppVeyor](https://ci.appveyor.com/project/paazmaya/shuji)
+  - Test also in Windows, at [AppVeyor](https://ci.appveyor.com/project/paazmaya/shuji)
 * `v0.3.0` (2016-07-07)
-    - Start using shared ESLint configuration #1
-    - Test against Node.js v6
+  - Start using shared ESLint configuration #1
+  - Test against Node.js v6
 * `v0.2.0` (2016-03-14)
-    - Do not overwrite existing files, instead skip them
+  - Do not overwrite existing files, instead skip them
 * `v0.1.0` (2016-02-12)
-    - Initial release which can make it happen
+  - Initial release which can make it happen
 
 ## License
 
