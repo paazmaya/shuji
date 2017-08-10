@@ -37,7 +37,7 @@ Usage: shuji [options] <file|directory>
   -M, --match String       Regular expression for matching and filtering files - default: \.map$
   -r, --recursive          Recursively search matching files
 
-Version 0.3.0
+Version 0.4.0
 ```
 
 ## Testing
@@ -78,8 +78,10 @@ Please note that any features or changed will not be merged without working unit
 
 ## Version history
 
-* `v0.4.0` (2017-07)
+* `v0.4.0` (2017-08-10)
   - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
+  - Configure code coverage reporting to correctly validate unit test coverage, via `--exclude` configuration
+  - Dependencies are once again up to date :neckbeard:
 * `v0.3.1` (2016-08-08)
   - Test also in Windows, at [AppVeyor](https://ci.appveyor.com/project/paazmaya/shuji)
 * `v0.3.0` (2016-07-07)

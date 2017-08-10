@@ -1,6 +1,6 @@
 {
   "name": "shuji",
-  "version": "0.3.1",
+  "version": "0.4.0",
   "description": "Reverse engineering JavaScript and CSS sources from sourcemaps",
   "main": "index.js",
   "bin": "bin/shuji.js",
@@ -34,16 +34,16 @@
   },
   "homepage": "https://github.com/paazmaya/shuji#readme",
   "dependencies": {
-    "fs-extra": "^3.0.1",
+    "fs-extra": "^4.0.1",
     "optionator": "^0.8.2",
     "source-map": "^0.5.6"
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
-    "codecov": "^2.2.0",
-    "eslint": "^4.2.0",
-    "eslint-config-paazmaya": "^4.0.0",
-    "nyc": "^11.0.3",
-    "tape": "^4.7.0"
+    "codecov": "^2.3.0",
+    "eslint": "^4.4.1",
+    "eslint-config-paazmaya": "^4.1.0",
+    "nyc": "^11.1.0",
+    "tape": "^4.8.0"
   }
 }

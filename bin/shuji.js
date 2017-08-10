@@ -12,10 +12,10 @@
 
 'use strict';
 
-const fs = require('fs-extra'),
-  path = require('path');
+const path = require('path');
 
-const optionator = require('optionator');
+const optionator = require('optionator'),
+  fs = require('fs-extra');
 
 const shuji = require('../index');
 
