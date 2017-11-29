@@ -163,28 +163,24 @@ fileList.forEach((filepath) => {
   }
 
   const input = fs.readFileSync(filepath, 'utf8'),
-    outdir = path.join(outputDir, path.dirname(filepath)),
     output = shuji(input, {
       verbose: typeof opts.verbose === 'boolean' ?
         opts.verbose :
         false
     });
 
-  fs.ensureDirSync(outdir);
-
   Object.keys(output).forEach((item) => {
-    const outfile = path.join(outdir, item);
+    // https://security.stackexchange.com/a/123723
+    const safeSuffix = path.normalize(item).replace(/^(\.\.[/\\])+/, '');
+    const outfile = path.resolve(outputDir, safeSuffix);
+
+    fs.ensureDirSync(path.dirname(outfile));
 
     if (opts.verbose) {
       console.log(`Writing to file ${outfile}`);
     }
 
-    if (fs.existsSync(outfile)) {
-      console.error('File existed, skipping!');
-    }
-    else {
-      fs.writeFileSync(outfile, output[item], 'utf8');
-    }
+    fs.writeFileSync(outfile, output[item], 'utf8');
   });
 
 });
