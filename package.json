@@ -36,14 +36,14 @@
   "dependencies": {
     "fs-extra": "^5.0.0",
     "optionator": "^0.8.2",
-    "source-map": "^0.6.1"
+    "source-map": "^0.7.2"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^8.2.2",
     "codecov": "^3.0.0",
-    "eslint": "^4.15.0",
+    "eslint": "^4.19.0",
     "eslint-config-paazmaya": "^4.3.0",
-    "nyc": "^11.4.1",
-    "tape": "^4.8.0"
+    "nyc": "^11.6.0",
+    "tape": "^4.9.0"
   }
 }
