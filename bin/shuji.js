@@ -162,29 +162,23 @@ fileList.forEach((filepath) => {
     console.log(`Processing file ${filepath}`);
   }
 
-  const input = fs.readFileSync(filepath, 'utf8'),
-    outdir = path.join(outputDir, path.dirname(filepath)),
-    output = shuji(input, {
-      verbose: typeof opts.verbose === 'boolean' ?
-        opts.verbose :
-        false
-    });
+  const input = fs.readFileSync(filepath, 'utf8');
 
-  fs.ensureDirSync(outdir);
+  const output = shuji(input, {
+    verbose: typeof opts.verbose === 'boolean' ?
+      opts.verbose :
+      false
+  });
 
   Object.keys(output).forEach((item) => {
-    const outfile = path.join(outdir, item);
+    const outfile = path.resolve(outputDir, item);
+    fs.ensureDirSync(path.dirname(outfile));
 
     if (opts.verbose) {
       console.log(`Writing to file ${outfile}`);
     }
 
-    if (fs.existsSync(outfile)) {
-      console.error('File existed, skipping!');
-    }
-    else {
-      fs.writeFileSync(outfile, output[item], 'utf8');
-    }
+    fs.writeFileSync(outfile, output[item], 'utf8');
   });
 
 });
