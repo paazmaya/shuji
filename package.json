@@ -30,7 +30,7 @@
     "url": "https://github.com/paazmaya/shuji/issues"
   },
   "engines": {
-    "node": ">=6.9.5"
+    "node": ">=8.11.1"
   },
   "homepage": "https://github.com/paazmaya/shuji#readme",
   "dependencies": {
