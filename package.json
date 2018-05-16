@@ -1,5 +1,5 @@
 {
-  "name": "shuji",
+  "name": "@jingsam/shuji",
   "version": "0.3.1",
   "description": "Reverse engineering JavaScript and CSS sources from sourcemaps",
   "main": "index.js",
