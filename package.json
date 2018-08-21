@@ -34,16 +34,16 @@
   },
   "homepage": "https://github.com/paazmaya/shuji#readme",
   "dependencies": {
-    "fs-extra": "^5.0.0",
+    "fs-extra": "^7.0.0",
     "optionator": "^0.8.2",
-    "source-map": "^0.7.2"
+    "source-map": "^0.7.3"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.2",
-    "codecov": "^3.0.0",
-    "eslint": "^4.19.0",
-    "eslint-config-paazmaya": "^4.3.0",
-    "nyc": "^11.6.0",
-    "tape": "^4.9.0"
+    "babel-eslint": "^8.2.6",
+    "codecov": "^3.0.4",
+    "eslint": "^5.4.0",
+    "eslint-config-paazmaya": "^5.0.0",
+    "nyc": "^12.0.2",
+    "tape": "^4.9.1"
   }
 }
