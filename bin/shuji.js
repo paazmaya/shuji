@@ -108,7 +108,7 @@ if (opts.help || opts._.length === 0) {
 const fileList = [];
 
 // Expression to match file paths against
-const matcher = new RegExp(opts.match);
+const matcher = new RegExp(opts.match, 'u');
 
 /**
  * Determine if the given existing filepath is a file or directory
