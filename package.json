@@ -39,11 +39,11 @@
     "source-map": "^0.7.3"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
+    "babel-eslint": "^9.0.0",
     "codecov": "^3.0.4",
     "eslint": "^5.4.0",
     "eslint-config-paazmaya": "^5.0.0",
-    "nyc": "^12.0.2",
+    "nyc": "^13.0.1",
     "tape": "^4.9.1"
   }
 }
