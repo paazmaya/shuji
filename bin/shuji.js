@@ -134,7 +134,7 @@ const handleFilepath = (filepath, recurse) => {
 
 opts._.forEach((item) => {
   if (!fs.existsSync(item)) {
-    console.error(`File (${item}) not found`);
+    console.error(`Error: File (${item}) not found`);
   }
   else {
     // It is ok to enter the directory on the first level
@@ -145,6 +145,11 @@ opts._.forEach((item) => {
 if (opts.verbose) {
   console.log(`Going to process total of ${fileList.length} files`);
 }
+
+if (!fileList.lenght) {
+  console.error('Error: No valid input files given');
+  return;
+} 
 
 const outputDir = path.resolve(opts.outputDir);
 
@@ -157,14 +162,15 @@ if (!fs.existsSync(outputDir)) {
 }
 
 // Process then...
-fileList.forEach(async (filepath) => {
+fileList.forEach(async (inputFilepath) => {
   if (opts.verbose) {
-    console.log(`Processing file ${filepath}`);
+    console.log(`Processing file ${inputFilepath}`);
   }
 
-  const outdir = path.join(outputDir, path.dirname(filepath));
+  const outdir = path.join(outputDir, path.dirname(inputFilepath));
 
-  const input = fs.readFileSync(filepath, 'utf8');
+  const input = fs.readFileSync(inputFilepath, 'utf8');
+  console.log(input);
   const output = await shuji(input, {
       verbose: typeof opts.verbose === 'boolean' ?
         opts.verbose :
@@ -176,21 +182,21 @@ fileList.forEach(async (filepath) => {
   const sourceFiles = Object.entries(output);
 
   if (!sourceFiles.length) {
-    console.error('Could not reverse sourcemap');
+    console.error(`Error: Could not reverse sourcemap for file ${inputFilepath}`);
   }
 
   sourceFiles.forEach(([filename, content]) => {
-    const filepath = path.join(outdir, filename);
+    const outputFilepath = path.join(outdir, filename);
 
     if (opts.verbose) {
-      console.log(`Writing to file ${filepath}`);
+      console.log(`Writing to file ${outputFilepath}`);
     }
 
-    if (fs.existsSync(filepath)) {
-      console.error('File existed, skipping!');
+    if (fs.existsSync(outputFilepath)) {
+      console.error('Error: File already exists, skipping!');
     }
     else {
-      fs.writeFileSync(filepath, content, 'utf8');
+      fs.writeFileSync(outputFilepath, content, 'utf8');
     }
   });
 
