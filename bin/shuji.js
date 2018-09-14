@@ -146,7 +146,7 @@ if (opts.verbose) {
   console.log(`Going to process total of ${fileList.length} files`);
 }
 
-if (!fileList.lenght) {
+if (!fileList.length) {
   console.error('Error: No valid input files given');
 
   return;
