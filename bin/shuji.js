@@ -157,14 +157,15 @@ if (!fs.existsSync(outputDir)) {
 }
 
 // Process then...
-fileList.forEach((filepath) => {
+fileList.forEach(async (filepath) => {
   if (opts.verbose) {
     console.log(`Processing file ${filepath}`);
   }
 
-  const input = fs.readFileSync(filepath, 'utf8'),
-    outdir = path.join(outputDir, path.dirname(filepath)),
-    output = shuji(input, {
+  const outdir = path.join(outputDir, path.dirname(filepath));
+
+  const input = fs.readFileSync(filepath, 'utf8');
+  const output = await shuji(input, {
       verbose: typeof opts.verbose === 'boolean' ?
         opts.verbose :
         false
@@ -172,18 +173,24 @@ fileList.forEach((filepath) => {
 
   fs.ensureDirSync(outdir);
 
-  Object.keys(output).forEach((item) => {
-    const outfile = path.join(outdir, item);
+  const sourceFiles = Object.entries(output);
+
+  if (!sourceFiles.length) {
+    console.error('Could not reverse sourcemap');
+  }
+
+  sourceFiles.forEach(([filename, content]) => {
+    const filepath = path.join(outdir, filename);
 
     if (opts.verbose) {
-      console.log(`Writing to file ${outfile}`);
+      console.log(`Writing to file ${filepath}`);
     }
 
-    if (fs.existsSync(outfile)) {
+    if (fs.existsSync(filepath)) {
       console.error('File existed, skipping!');
     }
     else {
-      fs.writeFileSync(outfile, output[item], 'utf8');
+      fs.writeFileSync(filepath, content, 'utf8');
     }
   });
 

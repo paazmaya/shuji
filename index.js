@@ -20,9 +20,9 @@ const sourceMap = require('source-map');
  *
  * @returns {object} Source contents mapped to file names
  */
-module.exports = (input, options) => {
+module.exports = async (input, options) => {
 
-  const consumer = new sourceMap.SourceMapConsumer(input);
+  const consumer = await new sourceMap.SourceMapConsumer(input);
 
   const map = {};
 
@@ -39,6 +39,8 @@ module.exports = (input, options) => {
   else if (options.verbose) {
     console.log('Not all sources were included in the sourcemap');
   }
+
+  consumer.destroy();
 
   return map;
 };
