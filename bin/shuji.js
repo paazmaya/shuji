@@ -148,8 +148,9 @@ if (opts.verbose) {
 
 if (!fileList.lenght) {
   console.error('Error: No valid input files given');
+
   return;
-} 
+}
 
 const outputDir = path.resolve(opts.outputDir);
 
@@ -172,10 +173,10 @@ fileList.forEach(async (inputFilepath) => {
   const input = fs.readFileSync(inputFilepath, 'utf8');
   console.log(input);
   const output = await shuji(input, {
-      verbose: typeof opts.verbose === 'boolean' ?
-        opts.verbose :
-        false
-    });
+    verbose: typeof opts.verbose === 'boolean' ?
+      opts.verbose :
+      false
+  });
 
   fs.ensureDirSync(outdir);
 
