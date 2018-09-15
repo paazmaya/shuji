@@ -194,7 +194,7 @@ fileList.forEach(async (inputFilepath) => {
     }
 
     if (fs.existsSync(outputFilepath)) {
-      console.error('Error: File already exists, skipping!');
+      console.error(`Warning: File ${outputFilepath} already exists, skipping!`);
     }
     else {
       fs.writeFileSync(outputFilepath, content, 'utf8');
