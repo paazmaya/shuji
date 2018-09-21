@@ -187,6 +187,7 @@ fileList.forEach(async (inputFilepath) => {
   }
 
   sourceFiles.forEach(([filename, content]) => {
+    filename = filename.replace(/(\?\S+)/, '');
     const outputFilepath = path.join(outdir, filename);
 
     if (opts.verbose) {
