@@ -33,12 +33,14 @@ Usage: shuji [options] <file|directory>
 
   -h, --help               Help and usage instructions
   -V, --version            Version number
-  -v, --verbose            Verbose output, will print which file is currently being processed
+  -v, --verbose            Verbose output, will print which file is currently being
+                           processed
   -o, --output-dir String  Output directory - default: .
-  -M, --match String       Regular expression for matching and filtering files - default: \.map$
+  -M, --match String       Regular expression for matching and filtering files -
+                           default: \.map$
   -r, --recursive          Recursively search matching files
 
-Version 0.4.0
+Version 0.5.0
 ```
 
 ## Testing
@@ -79,6 +81,9 @@ Please note that any features or changed will not be merged without working unit
 
 ## Version history
 
+* `v0.5.0` (2018-10-24)
+  - Minimum Node.js version lifted from `6.9.5` to `8.11.1`
+  - Ignoring parts in the filename after `?`
 * `v0.4.0` (2017-08-10)
   - Minimum Node.js version lifted from `4.2.0` to `6.9.5`
   - Configure code coverage reporting to correctly validate unit test coverage, via `--exclude` configuration
