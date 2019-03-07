@@ -44,6 +44,6 @@
     "eslint": "5.15.1",
     "eslint-config-paazmaya": "5.2.0",
     "nyc": "13.3.0",
-    "tape": "4.9.1"
+    "tape": "4.10.1"
   }
 }
