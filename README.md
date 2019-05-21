@@ -81,6 +81,8 @@ Please note that any features or changed will not be merged without working unit
 
 ## Version history
 
+* `v0.5.1` (2019-05-21)
+  - Updated dependencies in order to remove possible security vulnerabilities
 * `v0.5.0` (2018-10-24)
   - Minimum Node.js version lifted from `6.9.5` to `8.11.1`
   - Ignoring parts in the filename after `?`
