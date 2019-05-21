@@ -45,18 +45,22 @@ Version 0.5.0
 
 ## Testing
 
-Test files are generated with [UglifyJS2](https://github.com/mishoo/UglifyJS2) and
+Test files are generated with [UglifyJS](https://www.npmjs.com/package/uglify-js) and
 [`sass`](http://sass-lang.com)
 by using files from the [stretchy](https://github.com/LeaVerou/stretchy) project,
 with the following commands:
 
 ```sh
 uglifyjs stretchy.js --compress --mangle \
- -o stretchy.min.js --source-map stretchy.min.js.map
+ --output stretchy.min.js --source-map includeSources
+mv stretchy.min.js.map stretchy-with-sources.min.js.map
 
 uglifyjs stretchy.js --compress --mangle \
- -o stretchy.min.js --source-map stretchy-with-sources.min.js.map \
- --source-map-include-sources
+ --output stretchy.min.js --source-map "url=inline"
+mv stretchy.min.js stretchy-inline-sources.min.js
+
+uglifyjs stretchy.js --compress --mangle \
+ --output stretchy.min.js --source-map
 
 sass stretchy.scss:stretchy.css
 
