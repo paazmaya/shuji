@@ -24,9 +24,17 @@ tape('findMap - LICENSE', (test) => {
 tape('findMap - stretchy-inline-sources.min.js', (test) => {
   test.plan(1);
 
-  const content = findMap('tests/fixtures/stretchy-inline-sources.min.js');
+  const content = findMap('tests/fixtures/stretchy-inline-sources.min.js', {verbose: true});
 
   test.equal(content.length, 3269);
+});
+
+tape('findMap - stretchy-inline.css has inline sources', (test) => {
+  test.plan(1);
+
+  const content = findMap('tests/fixtures/stretchy-inline.css');
+
+  test.equal(content.length, 1243);
 });
 
 tape('findMap - stretchy-inline.css.map', (test) => {
@@ -48,17 +56,17 @@ tape('findMap - stretchy-with-sources.min.js.map', (test) => {
 tape('findMap - stretchy.css.map', (test) => {
   test.plan(1);
 
-  const content = findMap('tests/fixtures/stretchy.css.map');
+  const content = findMap('tests/fixtures/stretchy.css.map', {verbose: true});
 
-  test.equal(content.length, 3355);
+  test.equal(content.length, 1180);
 });
 
-tape('findMap - stretchy.min.js', (test) => {
+tape('findMap - stretchy.min.js finds separate map file', (test) => {
   test.plan(1);
 
-  const content = findMap('tests/fixtures/stretchy.min.js');
+  const content = findMap('tests/fixtures/stretchy.min.js', {verbose: true});
 
-  test.notOk(content);
+  test.equal(content.length, 3269);
 });
 
 tape('findMap - stretchy.min.js.map', (test) => {

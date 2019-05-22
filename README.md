@@ -45,8 +45,8 @@ Version 0.5.0
 
 ## Testing
 
-Test files are generated with [UglifyJS](https://www.npmjs.com/package/uglify-js) and
-[`sass`](http://sass-lang.com)
+Test files are generated with [UglifyJS 3](https://www.npmjs.com/package/uglify-js) and
+[`sass`](https://sass-lang.com/install)
 by using files from the [stretchy](https://github.com/LeaVerou/stretchy) project,
 with the following commands:
 
@@ -60,11 +60,11 @@ uglifyjs stretchy.js --compress --mangle \
 mv stretchy.min.js stretchy-inline-sources.min.js
 
 uglifyjs stretchy.js --compress --mangle \
- --output stretchy.min.js --source-map "url=script.min.js.map"
+ --output stretchy.min.js --source-map "url=stretchy.min.js.map"
 
 sass stretchy.scss:stretchy.css
 
-sass stretchy.scss:stretchy.css --sourcemap=inline
+sass stretchy.scss:stretchy-inline.css --embed-source-map
 ```
 
 Unit tests are written with [`tape`](https://github.com/substack/tape) and can be executed with `npm test`.
