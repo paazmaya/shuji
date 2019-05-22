@@ -15,8 +15,9 @@ const path = require('path');
 const sourceMap = require('source-map');
 
 /**
- * @param {string} input Contents of the sourcemap file
- * @param {object} options Object {verbose: boolean}
+ * @param {string} input Contents of the sourceMap file
+ * @param {object} options Options object
+ * @param {boolean} options.verbose Shall there be more output
  *
  * @returns {object} Source contents mapped to file names
  */

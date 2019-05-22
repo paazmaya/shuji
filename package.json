@@ -5,8 +5,8 @@
   "main": "index.js",
   "bin": "bin/shuji.js",
   "scripts": {
-    "lint": "eslint index.js bin/shuji.js",
-    "test": "nyc --all --exclude tests tape tests/*_test.js && rm -rf tmp",
+    "lint": "eslint index.js bin lib",
+    "test": "nyc --all --exclude tests tape tests/*_test.js tests/lib/*_test.js && rm -rf tmp",
     "coverage": "nyc --all --exclude tests report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "repository": {
