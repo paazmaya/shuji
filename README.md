@@ -60,7 +60,7 @@ uglifyjs stretchy.js --compress --mangle \
 mv stretchy.min.js stretchy-inline-sources.min.js
 
 uglifyjs stretchy.js --compress --mangle \
- --output stretchy.min.js --source-map
+ --output stretchy.min.js --source-map "url=script.min.js.map"
 
 sass stretchy.scss:stretchy.css
 
@@ -85,6 +85,8 @@ Please note that any features or changed will not be merged without working unit
 
 ## Version history
 
+* `v0.6.0` (2019-05-)
+  - Removed the option for directory recursion, it is now always a recursive operation
 * `v0.5.1` (2019-05-21)
   - Updated dependencies in order to remove possible security vulnerabilities
 * `v0.5.0` (2018-10-24)

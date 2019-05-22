@@ -17,7 +17,9 @@ const path = require('path');
 const optionator = require('optionator'),
   fs = require('fs-extra');
 
-const shuji = require('../index');
+const shuji = require('../index'),
+  findFiles = require('../lib/find-files'),
+  findMap = require('../lib/find-map');
 
 let pkg;
 
@@ -69,13 +71,6 @@ const optsParser = optionator({
       type: 'String',
       default: '\\.map$',
       description: 'Regular expression for matching and filtering files'
-    },
-    {
-      option: 'recursive',
-      alias: 'r',
-      type: 'Boolean',
-      default: false,
-      description: 'Recursively search matching files'
     }
   ]
 });
@@ -104,41 +99,17 @@ if (opts.help || opts._.length === 0) {
   process.exit();
 }
 
-// List of files that will be processed
-const fileList = [];
-
 // Expression to match file paths against
-const matcher = new RegExp(opts.match, 'u');
-
-/**
- * Determine if the given existing filepath is a file or directory
- * and continue with filtering and recursive when needed.
- *
- * @param {string} filepath Relative filepath that exists
- * @param {bool} recurse Should a directory be entered
- * @returns {void}
- */
-const handleFilepath = (filepath, recurse) => {
-  const stat = fs.statSync(filepath);
-  if (stat.isDirectory() && recurse) {
-    const list = fs.readdirSync(filepath);
-
-    list.forEach((item) => {
-      handleFilepath(path.join(filepath, item), opts.recursive);
-    });
-  }
-  else if (filepath.match(matcher) && stat.isFile()) {
-    fileList.push(filepath);
-  }
-};
+const MATCH_FILE = new RegExp(opts.match, 'u');
+let fileList = [];
 
 opts._.forEach((item) => {
   if (!fs.existsSync(item)) {
-    console.error(`Error: File (${item}) not found`);
+    console.error(`Error: File "${item}" not found`);
   }
   else {
-    // It is ok to enter the directory on the first level
-    handleFilepath(item, true);
+    // List of files that will be processed
+    fileList = fileList.concat(findFiles(item, MATCH_FILE));
   }
 });
 
@@ -155,7 +126,7 @@ if (!fileList.length) {
 const outputDir = path.resolve(opts.outputDir);
 
 if (opts.verbose) {
-  console.log(`Outputting to directory: ${outputDir}`);
+  console.log(`Outputting to directory "${outputDir}"`);
 }
 
 if (!fs.existsSync(outputDir)) {
@@ -165,13 +136,13 @@ if (!fs.existsSync(outputDir)) {
 // Process then...
 fileList.forEach(async (inputFilepath) => {
   if (opts.verbose) {
-    console.log(`Processing file ${inputFilepath}`);
+    console.log(`Processing file "${inputFilepath}"`);
   }
 
   const outdir = path.join(outputDir, path.dirname(inputFilepath));
+  const input = findMap(inputFilepath);
 
-  const input = fs.readFileSync(inputFilepath, 'utf8');
-  console.log(input);
+  //console.log(input);
   const output = await shuji(input, {
     verbose: typeof opts.verbose === 'boolean' ?
       opts.verbose :

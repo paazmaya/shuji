@@ -47,8 +47,19 @@ tape('cli should output help when requested', (test) => {
 tape('cli should create folder for output', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin, '-o', 'tmp', 'tests/fixtures'], null, (err, stdout) => {
-    test.ok(fs.existsSync('tmp'), 'Temporary folder exists');
+  execFile('node', [pkg.bin, '-o', 'tmp/out', 'tests/fixtures'], null, (err, stdout) => {
+    test.ok(fs.existsSync('tmp/out'), 'Temporary out folder exists');
+    console.log(stdout);
+  });
+
+});
+
+tape('cli should read match argument', (test) => {
+  test.plan(1);
+
+  execFile('node', [pkg.bin, '-o', 'tmp/inline', '-v', '--match', '\\\.min\\\.js$', 'tests/fixtures'], null, (err, stdout) => {
+    test.ok(fs.existsSync('tmp/inline'), 'Temporary inline folder exists');
+    console.log(stdout);
   });
 
 });
