@@ -54,6 +54,17 @@ tape('cli should create folder for output', (test) => {
 
 });
 
+tape('cli should accept single JS file', (test) => {
+  test.plan(3);
+
+  execFile('node', [pkg.bin, '-o', 'tmp/command', '--match', '\.js', 'tests/fixtures/stretchy.min.js'], null, (err, stdout) => {
+    test.ok(fs.existsSync('tmp/command'), 'Temporary out folder exists');
+    test.ok(fs.existsSync('tmp/command/tests'), 'Temporary out folder exists');
+    test.ok(fs.existsSync('tmp/command/tests/fixtures'), 'Temporary out folder exists');
+  });
+
+});
+
 tape('cli should read match argument', (test) => {
   test.plan(1);
 
