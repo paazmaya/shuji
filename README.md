@@ -85,8 +85,10 @@ Please note that any features or changed will not be merged without working unit
 
 ## Version history
 
-* `v0.6.0` (2019-05-)
+* `v0.6.0` (2019-05-27)
   - Removed the option for directory recursion, it is now always a recursive operation
+  - Support for reading inline source maps, from JavaScript and CSS files
+  - Use [`npm-shrinkwrap.json`](https://docs.npmjs.com/files/shrinkwrap.json) for locking the working set of 3rd party dependencies
 * `v0.5.1` (2019-05-21)
   - Updated dependencies in order to remove possible security vulnerabilities
 * `v0.5.0` (2018-10-24)
