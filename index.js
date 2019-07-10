@@ -10,13 +10,36 @@
 
 'use strict';
 
-const readSources = require('./lib/read-sources');
+const readSources = require('./lib/read-sources'),
+  findMap = require('./lib/find-map');
 
 /**
- * @param {string} input Contents of the sourceMap file
+ * @param {string} inputFilepath Contents of the sourceMap file
  * @param {object} options Options object
  * @param {boolean} options.verbose Shall there be more output
  *
- * @returns {object} Source contents mapped to file names
+ * @returns {Array} Source contents mapped to file names
  */
-module.exports = readSources;
+const handleInput = async (inputFilepath, options) => {
+  if (options.verbose) {
+    console.log(`Processing file "${inputFilepath}"`);
+  }
+
+  const input = findMap(inputFilepath);
+
+  const output = await readSources(input, {
+    verbose: typeof options.verbose === 'boolean' ?
+      options.verbose :
+      false
+  });
+
+  const sourceFiles = Object.entries(output);
+
+  if (!sourceFiles.length) {
+    console.error(`Could not get any sources for "${inputFilepath}"`);
+  }
+
+  return sourceFiles;
+};
+
+module.exports = handleInput;

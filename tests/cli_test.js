@@ -20,7 +20,10 @@ const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'
 tape('cli should output version number', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin, '-V'], null, (err, stdout) => {
+  execFile('node', [pkg.bin, '-V'], null, (error, stdout) => {
+    if (error) {
+      test.fail(error);
+    }
     test.equals(stdout.trim(), pkg.version, 'Version is the same as in package.json');
   });
 
@@ -29,7 +32,10 @@ tape('cli should output version number', (test) => {
 tape('cli should output help by default', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin], null, (err, stdout) => {
+  execFile('node', [pkg.bin], null, (error, stdout) => {
+    if (error) {
+      test.fail(error);
+    }
     test.ok(stdout.trim().indexOf('shuji [options] <file|directory>') !== -1, 'Help appeared');
   });
 
@@ -38,7 +44,10 @@ tape('cli should output help by default', (test) => {
 tape('cli should output help when requested', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin, '--help'], null, (err, stdout) => {
+  execFile('node', [pkg.bin, '--help'], null, (error, stdout) => {
+    if (error) {
+      test.fail(error);
+    }
     test.ok(stdout.trim().indexOf('shuji [options] <file|directory>') !== -1, 'Help appeared');
   });
 
@@ -47,7 +56,10 @@ tape('cli should output help when requested', (test) => {
 tape('cli should create folder for output', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin, '-o', 'tmp/out', 'tests/fixtures'], null, (err, stdout) => {
+  execFile('node', [pkg.bin, '-o', 'tmp/out', 'tests/fixtures', '-v', '-M', '.js'], null, (error, stdout) => {
+    if (error) {
+      test.fail(error);
+    }
     test.ok(fs.existsSync('tmp/out'), 'Temporary out folder exists');
     console.log(stdout);
   });
@@ -57,7 +69,10 @@ tape('cli should create folder for output', (test) => {
 tape('cli should accept single JS file', (test) => {
   test.plan(3);
 
-  execFile('node', [pkg.bin, '-o', 'tmp/command', '--match', '\.js', 'tests/fixtures/stretchy.min.js'], null, (err, stdout) => {
+  execFile('node', [pkg.bin, '-v', '-M', '.js', '-o', 'tmp/command', 'tests/fixtures/stretchy-inline-sources.min.js'], null, (error, stdout) => {
+    if (error) {
+      test.fail(error);
+    }
     test.ok(fs.existsSync('tmp/command'), 'Temporary out folder exists');
     test.ok(fs.existsSync('tmp/command/tests'), 'Temporary out folder exists');
     test.ok(fs.existsSync('tmp/command/tests/fixtures'), 'Temporary out folder exists');
@@ -68,7 +83,10 @@ tape('cli should accept single JS file', (test) => {
 tape('cli should read match argument', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin, '-o', 'tmp/inline', '-v', '--match', '\\\.min\\\.js$', 'tests/fixtures'], null, (err, stdout) => {
+  execFile('node', [pkg.bin, '-o', 'tmp/inline', '-v', '--match', '\\\.min\\\.js$', 'tests/fixtures'], null, (error, stdout) => {
+    if (error) {
+      test.fail(error);
+    }
     test.ok(fs.existsSync('tmp/inline'), 'Temporary inline folder exists');
     console.log(stdout);
   });

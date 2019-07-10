@@ -18,8 +18,7 @@ const optionator = require('optionator'),
   fs = require('fs-extra');
 
 const shuji = require('../index'),
-  findFiles = require('../lib/find-files'),
-  findMap = require('../lib/find-map');
+  findFiles = require('../lib/find-files');
 
 let pkg;
 
@@ -120,7 +119,7 @@ if (opts.verbose) {
 if (!fileList.length) {
   console.error('Error: No valid input files given');
 
-  return;
+  process.exit(1);
 }
 
 const outputDir = path.resolve(opts.outputDir);
@@ -130,43 +129,40 @@ if (opts.verbose) {
 }
 
 if (!fs.existsSync(outputDir)) {
+  if (opts.verbose) {
+    console.log(`The output directory "${outputDir}" does not exist, hence creating it`);
+  }
   fs.ensureDirSync(outputDir);
 }
 
+// https://security.stackexchange.com/a/123723
+const SAFE_PATH = /^(\.\.[/\\])+/gu;
+const AFTER_QUESTION = /(\?\S+)/gu;
+
 // Process then...
 fileList.forEach(async (inputFilepath) => {
-  if (opts.verbose) {
-    console.log(`Processing file "${inputFilepath}"`);
-  }
 
   const outdir = path.join(outputDir, path.dirname(inputFilepath));
-  const input = findMap(inputFilepath);
-
-  //console.log(input);
-  const output = await shuji(input, {
-    verbose: typeof opts.verbose === 'boolean' ?
-      opts.verbose :
-      false
-  });
-
   fs.ensureDirSync(outdir);
 
-  const sourceFiles = Object.entries(output);
-
-  if (!sourceFiles.length) {
-    console.error(`Error: Could not reverse sourcemap for file ${inputFilepath}`);
-  }
+  const sourceFiles = await shuji(inputFilepath, opts);
 
   sourceFiles.forEach(([filename, content]) => {
-    filename = filename.replace(/(\?\S+)/u, '');
+    filename = filename.replace(AFTER_QUESTION, '');
+
     const outputFilepath = path.join(outdir, filename);
 
+    //const safeSuffix = path.normalize(filename).replace(SAFE_PATH, '');
+    //const outputFilepath = path.resolve(outputDir, safeSuffix);
+
     if (opts.verbose) {
-      console.log(`Writing to file ${outputFilepath}`);
+      console.log(`Writing to file "${outputFilepath}"`);
     }
 
+    fs.ensureDirSync(path.dirname(outputFilepath));
+
     if (fs.existsSync(outputFilepath)) {
-      console.error(`Warning: File ${outputFilepath} already exists, skipping!`);
+      console.error(`File "${outputFilepath}" already exists, skipping!`);
     }
     else {
       fs.writeFileSync(outputFilepath, content, 'utf8');

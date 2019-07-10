@@ -9,17 +9,21 @@
  */
 'use strict';
 
+const fs = require('fs');
+
 const tape = require('tape');
 
 const readSources = require('../../lib/read-sources');
 
-tape('readSources - got few map files', (test) => {
+tape('readSources - nothing', (test) => {
   test.plan(1);
 
-  const input = '';
-  const options = {};
+  const input = fs.readFileSync('tests/fixtures/stretchy-inline.css.map', 'utf8');
+  const options = {
+    verbose: true
+  };
 
   const output = readSources(input, options);
 
-  test.equal(output.length, 4);
+  test.deepEqual(output, {});
 });
