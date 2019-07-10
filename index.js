@@ -10,9 +10,7 @@
 
 'use strict';
 
-const path = require('path');
-
-const sourceMap = require('source-map');
+const readSources = require('./lib/read-sources');
 
 /**
  * @param {string} input Contents of the sourceMap file
@@ -21,27 +19,4 @@ const sourceMap = require('source-map');
  *
  * @returns {object} Source contents mapped to file names
  */
-module.exports = async (input, options) => {
-
-  const consumer = await new sourceMap.SourceMapConsumer(input);
-
-  const map = {};
-
-  if (consumer.hasContentsOfAllSources()) {
-    if (options.verbose) {
-      console.log('All sources were included in the sourcemap');
-    }
-
-    consumer.sources.forEach((source) => {
-      const contents = consumer.sourceContentFor(source);
-      map[path.basename(source)] = contents;
-    });
-  }
-  else if (options.verbose) {
-    console.log('Not all sources were included in the sourcemap');
-  }
-
-  consumer.destroy();
-
-  return map;
-};
+module.exports = readSources;
