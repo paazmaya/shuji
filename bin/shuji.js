@@ -18,6 +18,7 @@ const optionator = require('optionator'),
   fs = require('fs-extra');
 
 const shuji = require('../index'),
+  writeSources = require('../lib/write-sources'),
   findFiles = require('../lib/find-files');
 
 let pkg;
@@ -135,10 +136,6 @@ if (!fs.existsSync(outputDir)) {
   fs.ensureDirSync(outputDir);
 }
 
-// https://security.stackexchange.com/a/123723
-const SAFE_PATH = /^(\.\.[/\\])+/gu;
-const AFTER_QUESTION = /(\?\S+)/gu;
-
 // Process then...
 fileList.forEach(async (inputFilepath) => {
 
@@ -148,25 +145,7 @@ fileList.forEach(async (inputFilepath) => {
   const sourceFiles = await shuji(inputFilepath, opts);
 
   sourceFiles.forEach(([filename, content]) => {
-    filename = filename.replace(AFTER_QUESTION, '');
-
-    const outputFilepath = path.join(outdir, filename);
-
-    //const safeSuffix = path.normalize(filename).replace(SAFE_PATH, '');
-    //const outputFilepath = path.resolve(outputDir, safeSuffix);
-
-    if (opts.verbose) {
-      console.log(`Writing to file "${outputFilepath}"`);
-    }
-
-    fs.ensureDirSync(path.dirname(outputFilepath));
-
-    if (fs.existsSync(outputFilepath)) {
-      console.error(`File "${outputFilepath}" already exists, skipping!`);
-    }
-    else {
-      fs.writeFileSync(outputFilepath, content, 'utf8');
-    }
+    writeSources(filename, content, outdir, opts);
   });
 
 });
