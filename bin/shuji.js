@@ -138,14 +138,10 @@ if (!fs.existsSync(outputDir)) {
 
 // Process then...
 fileList.forEach(async (inputFilepath) => {
-
-  const outdir = path.join(outputDir, path.dirname(inputFilepath));
-  fs.ensureDirSync(outdir);
-
   const sourceFiles = await shuji(inputFilepath, opts);
 
   sourceFiles.forEach(([filename, content]) => {
-    writeSources(filename, content, outdir, opts);
+    writeSources(filename, content, outputDir, opts);
   });
 
 });
