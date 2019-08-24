@@ -32,13 +32,13 @@ shuji - Reverse engineering JavaScript and CSS sources from sourcemaps
 Usage: shuji [options] <file|directory>
 
   -h, --help               Help and usage instructions
-  -V, --version            Version number
-  -v, --verbose            Verbose output, will print which file is currently being
-                           processed
   -o, --output-dir String  Output directory - default: .
+  -p, --preserve           Preserve sourcemap's original folder structure.
   -M, --match String       Regular expression for matching and filtering files -
                            default: \.map$
-  -r, --recursive          Recursively search matching files
+  -v, --verbose            Verbose output, will print which file is currently being
+                           processed
+  -V, --version            Version number
 
 Version 0.5.0
 ```
@@ -84,7 +84,6 @@ There should be no errors appearing after any JavaScript file changes.
 Please note that any features or changed will not be merged without working unit tests.
 
 ## Version history
-
 * `v0.6.0` (2019-05-27)
   - Removed the option for directory recursion, it is now always a recursive operation
   - Support for reading inline source maps, from JavaScript and CSS files
