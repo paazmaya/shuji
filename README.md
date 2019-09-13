@@ -40,7 +40,7 @@ Usage: shuji [options] <file|directory>
                            processed
   -V, --version            Version number
 
-Version 0.5.0
+Version 0.6.1
 ```
 
 ## Testing
@@ -84,6 +84,9 @@ There should be no errors appearing after any JavaScript file changes.
 Please note that any features or changed will not be merged without working unit tests.
 
 ## Version history
+
+* `v0.6.1` (2019-09-13)
+  - Dependency update and better unit test coverage
 * `v0.6.0` (2019-05-27)
   - Removed the option for directory recursion, it is now always a recursive operation
   - Support for reading inline source maps, from JavaScript and CSS files

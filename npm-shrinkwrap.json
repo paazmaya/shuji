@@ -1,6 +1,6 @@
 {
   "name": "shuji",
-  "version": "0.6.0",
+  "version": "0.6.1",
   "lockfileVersion": 1,
   "requires": true,
   "dependencies": {
@@ -45,7 +45,7 @@
         },
         "source-map": {
           "version": "0.5.7",
-          "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/source-map/-/source-map-0.5.7.tgz",
+          "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.5.7.tgz",
           "integrity": "sha1-igOdLRAh0i0eoUyA2OpGi6LvP8w=",
           "dev": true
         }
@@ -224,7 +224,7 @@
     },
     "ansi-escapes": {
       "version": "3.2.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/ansi-escapes/-/ansi-escapes-3.2.0.tgz",
+      "resolved": "https://registry.npmjs.org/ansi-escapes/-/ansi-escapes-3.2.0.tgz",
       "integrity": "sha512-cBhpre4ma+U0T1oM5fXg7Dy1Jw7zzwv7lt/GoCpr+hDQJoYnKVPLL4dCvSEFMmQurOQvSrwT7SL/DAlhBI97RQ==",
       "dev": true
     },
@@ -269,13 +269,13 @@
     },
     "argv": {
       "version": "0.0.2",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/argv/-/argv-0.0.2.tgz",
+      "resolved": "https://registry.npmjs.org/argv/-/argv-0.0.2.tgz",
       "integrity": "sha1-7L0W+JSbFXGDcRsb2jNPN4QBhas=",
       "dev": true
     },
     "astral-regex": {
       "version": "1.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/astral-regex/-/astral-regex-1.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/astral-regex/-/astral-regex-1.0.0.tgz",
       "integrity": "sha512-+Ryf6g3BKoRc7jfp7ad8tM4TtMiaWvbF/1/sQcZPkkS7ag3D5nMBCe2UfOTONtAkaG0tO0ij3C5Lwmf1EiyjHg==",
       "dev": true
     },
@@ -334,7 +334,7 @@
     },
     "callsites": {
       "version": "3.1.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/callsites/-/callsites-3.1.0.tgz",
+      "resolved": "https://registry.npmjs.org/callsites/-/callsites-3.1.0.tgz",
       "integrity": "sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==",
       "dev": true
     },
@@ -357,13 +357,13 @@
     },
     "chardet": {
       "version": "0.7.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/chardet/-/chardet-0.7.0.tgz",
+      "resolved": "https://registry.npmjs.org/chardet/-/chardet-0.7.0.tgz",
       "integrity": "sha512-mT8iDcrh03qDGRRmoA2hmBJnxpllMR+0/0qlzjqZES6NdiWDcZkCNAk4rPFZ9Q85r27unkiNNg8ZOiwZXBHwcA==",
       "dev": true
     },
     "cli-cursor": {
       "version": "2.1.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/cli-cursor/-/cli-cursor-2.1.0.tgz",
+      "resolved": "https://registry.npmjs.org/cli-cursor/-/cli-cursor-2.1.0.tgz",
       "integrity": "sha1-s12sN2R5+sw+lHR9QdDQ9SOP/LU=",
       "dev": true,
       "requires": {
@@ -372,7 +372,7 @@
     },
     "cli-width": {
       "version": "2.2.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/cli-width/-/cli-width-2.2.0.tgz",
+      "resolved": "https://registry.npmjs.org/cli-width/-/cli-width-2.2.0.tgz",
       "integrity": "sha1-/xnt6Kml5XkyQUewwR8PvLq+1jk=",
       "dev": true
     },
@@ -492,7 +492,7 @@
     },
     "deep-equal": {
       "version": "1.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/deep-equal/-/deep-equal-1.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/deep-equal/-/deep-equal-1.0.1.tgz",
       "integrity": "sha1-9dJgKStmDghO/0zbyfCK0yR0SLU=",
       "dev": true
     },
@@ -512,7 +512,7 @@
     },
     "define-properties": {
       "version": "1.1.3",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/define-properties/-/define-properties-1.1.3.tgz",
+      "resolved": "https://registry.npmjs.org/define-properties/-/define-properties-1.1.3.tgz",
       "integrity": "sha512-3MqfYKj2lLzdMSf8ZIZE/V+Zuy+BgD6f164e8K2w7dgnpKArBDerGYpM46IYYcjnkdPNMjPk9A6VFB8+3SKlXQ==",
       "dev": true,
       "requires": {
@@ -521,13 +521,13 @@
     },
     "defined": {
       "version": "1.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/defined/-/defined-1.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/defined/-/defined-1.0.0.tgz",
       "integrity": "sha1-yY2bzvdWdBiOEQlpFRGZ45sfppM=",
       "dev": true
     },
     "doctrine": {
       "version": "3.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/doctrine/-/doctrine-3.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/doctrine/-/doctrine-3.0.0.tgz",
       "integrity": "sha512-yS+Q5i3hBf7GBkd4KG8a7eBNNWNGLTaEwwYWUijIYM7zrlYDM0BFXHjjPWlWZ1Rg7UaddZeIDmi9jF3HmqiQ2w==",
       "dev": true,
       "requires": {
@@ -578,7 +578,7 @@
     },
     "es-to-primitive": {
       "version": "1.2.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/es-to-primitive/-/es-to-primitive-1.2.0.tgz",
+      "resolved": "https://registry.npmjs.org/es-to-primitive/-/es-to-primitive-1.2.0.tgz",
       "integrity": "sha512-qZryBOJjV//LaxLTV6UC//WewneB3LcXOL9NP++ozKVXsIIIpm/2c13UDiD9Jp2eThsecw9m3jPqDwTyobcdbg==",
       "dev": true,
       "requires": {
@@ -601,7 +601,7 @@
     },
     "es6-promisify": {
       "version": "5.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/es6-promisify/-/es6-promisify-5.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/es6-promisify/-/es6-promisify-5.0.0.tgz",
       "integrity": "sha1-UQnWLz5W6pZ8S2NQWu8IKRyKUgM=",
       "dev": true,
       "requires": {
@@ -738,7 +738,7 @@
     },
     "esquery": {
       "version": "1.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/esquery/-/esquery-1.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/esquery/-/esquery-1.0.1.tgz",
       "integrity": "sha512-SmiyZ5zIWH9VM+SRUReLS5Q8a7GxtRdxEBVZpm98rJM7Sb+A9DVCndXfkeFUd3byderg+EbDkfnevfCwynWaNA==",
       "dev": true,
       "requires": {
@@ -747,7 +747,7 @@
     },
     "esrecurse": {
       "version": "4.2.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/esrecurse/-/esrecurse-4.2.1.tgz",
+      "resolved": "https://registry.npmjs.org/esrecurse/-/esrecurse-4.2.1.tgz",
       "integrity": "sha512-64RBB++fIOAXPw3P9cy89qfMlvZEXZkqqJkjqqXIvzP5ezRZjW+lPWjw35UX/3EhUPFYbg5ER4JYgDw4007/DQ==",
       "dev": true,
       "requires": {
@@ -794,13 +794,13 @@
     },
     "fast-deep-equal": {
       "version": "2.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/fast-deep-equal/-/fast-deep-equal-2.0.1.tgz",
       "integrity": "sha1-ewUhjd+WZ79/Nwv3/bLLFf3Qqkk=",
       "dev": true
     },
     "fast-json-stable-stringify": {
       "version": "2.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/fast-json-stable-stringify/-/fast-json-stable-stringify-2.0.0.tgz",
       "integrity": "sha1-1RQsDK7msRifh9OnYREGT4bIu/I=",
       "dev": true
     },
@@ -811,7 +811,7 @@
     },
     "figures": {
       "version": "2.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/figures/-/figures-2.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/figures/-/figures-2.0.0.tgz",
       "integrity": "sha1-OrGi0qYsi/tDGgyUy3l6L84nyWI=",
       "dev": true,
       "requires": {
@@ -820,7 +820,7 @@
     },
     "file-entry-cache": {
       "version": "5.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/file-entry-cache/-/file-entry-cache-5.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/file-entry-cache/-/file-entry-cache-5.0.1.tgz",
       "integrity": "sha512-bCg29ictuBaKUwwArK4ouCaqDgLZcysCFLmM/Yn/FDoqndh/9vNuQfXRDvTuXKLxfD/JtZQGKFT8MGcJBK644g==",
       "dev": true,
       "requires": {
@@ -849,7 +849,7 @@
     },
     "flat-cache": {
       "version": "2.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/flat-cache/-/flat-cache-2.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/flat-cache/-/flat-cache-2.0.1.tgz",
       "integrity": "sha512-LoQe6yDuUMDzQAEH8sgmh4Md6oZnc/7PjtwjNFSzveXqSHt6ka9fPBuso7IGf9Rz4uqnSnWiFH2B/zj24a5ReA==",
       "dev": true,
       "requires": {
@@ -866,7 +866,7 @@
     },
     "for-each": {
       "version": "0.3.3",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/for-each/-/for-each-0.3.3.tgz",
+      "resolved": "https://registry.npmjs.org/for-each/-/for-each-0.3.3.tgz",
       "integrity": "sha512-jqYfLp7mo9vIyQf8ykW2v7A+2N4QjeCeI5+Dz9XraiO1ign81wjiH7Fb9vSOWvQfNtmSa4H2RoQTrrXivdUZmw==",
       "dev": true,
       "requires": {
@@ -920,13 +920,13 @@
     },
     "function-bind": {
       "version": "1.1.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/function-bind/-/function-bind-1.1.1.tgz",
+      "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz",
       "integrity": "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==",
       "dev": true
     },
     "functional-red-black-tree": {
       "version": "1.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/functional-red-black-tree/-/functional-red-black-tree-1.0.1.tgz",
       "integrity": "sha1-GwqzvVU7Kg1jmdKcDj6gslIHgyc=",
       "dev": true
     },
@@ -1001,7 +1001,7 @@
     },
     "has": {
       "version": "1.0.3",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/has/-/has-1.0.3.tgz",
+      "resolved": "https://registry.npmjs.org/has/-/has-1.0.3.tgz",
       "integrity": "sha512-f2dvO0VU6Oej7RkWJGrehjbzMAjFp5/VKPp5tTpWIV4JHHZK1/BxbFRtf/siA2SWTe09caDmVtYYzWEIbBS4zw==",
       "dev": true,
       "requires": {
@@ -1016,7 +1016,7 @@
     },
     "has-symbols": {
       "version": "1.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/has-symbols/-/has-symbols-1.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/has-symbols/-/has-symbols-1.0.0.tgz",
       "integrity": "sha1-uhqPGvKg/DllD1yFA2dwQSIGO0Q=",
       "dev": true
     },
@@ -1058,7 +1058,7 @@
     },
     "iconv-lite": {
       "version": "0.4.24",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/iconv-lite/-/iconv-lite-0.4.24.tgz",
+      "resolved": "https://registry.npmjs.org/iconv-lite/-/iconv-lite-0.4.24.tgz",
       "integrity": "sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==",
       "dev": true,
       "requires": {
@@ -1067,7 +1067,7 @@
     },
     "ignore": {
       "version": "4.0.6",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/ignore/-/ignore-4.0.6.tgz",
+      "resolved": "https://registry.npmjs.org/ignore/-/ignore-4.0.6.tgz",
       "integrity": "sha512-cyFDKrqc/YdcWFniJhzI42+AzS+gNwmUzOSFcRCQYwySuBBBy/KjuxWLZ/FHEH6Moq1NizMOBWyTcv8O4OZIMg==",
       "dev": true
     },
@@ -1135,13 +1135,13 @@
       "dependencies": {
         "ansi-regex": {
           "version": "4.1.0",
-          "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/ansi-regex/-/ansi-regex-4.1.0.tgz",
+          "resolved": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-4.1.0.tgz",
           "integrity": "sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==",
           "dev": true
         },
         "chalk": {
           "version": "2.4.2",
-          "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/chalk/-/chalk-2.4.2.tgz",
+          "resolved": "https://registry.npmjs.org/chalk/-/chalk-2.4.2.tgz",
           "integrity": "sha512-Mti+f9lpJNcwF4tWV8/OrTTtF1gZi+f8FqlyAdouralcFWFQWF2+NgCHShjkCb+IFBLq9buZwE1xckQU4peSuQ==",
           "dev": true,
           "requires": {
@@ -1158,7 +1158,7 @@
         },
         "strip-ansi": {
           "version": "5.2.0",
-          "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/strip-ansi/-/strip-ansi-5.2.0.tgz",
+          "resolved": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-5.2.0.tgz",
           "integrity": "sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==",
           "dev": true,
           "requires": {
@@ -1181,13 +1181,13 @@
     },
     "is-callable": {
       "version": "1.1.4",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/is-callable/-/is-callable-1.1.4.tgz",
+      "resolved": "https://registry.npmjs.org/is-callable/-/is-callable-1.1.4.tgz",
       "integrity": "sha512-r5p9sxJjYnArLjObpjA4xu5EKI3CuKHkJXMhT7kwbpUyIFD1n5PMAsoPvWnvtZiNz7LjkYDRZhd7FlI0eMijEA==",
       "dev": true
     },
     "is-date-object": {
       "version": "1.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/is-date-object/-/is-date-object-1.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/is-date-object/-/is-date-object-1.0.1.tgz",
       "integrity": "sha1-mqIOtq7rv/d/vTPnTKAbM1gdOhY=",
       "dev": true
     },
@@ -1214,13 +1214,13 @@
     },
     "is-promise": {
       "version": "2.1.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/is-promise/-/is-promise-2.1.0.tgz",
+      "resolved": "https://registry.npmjs.org/is-promise/-/is-promise-2.1.0.tgz",
       "integrity": "sha1-eaKp7OfwlugPNtKy87wWwf9L8/o=",
       "dev": true
     },
     "is-regex": {
       "version": "1.0.4",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/is-regex/-/is-regex-1.0.4.tgz",
+      "resolved": "https://registry.npmjs.org/is-regex/-/is-regex-1.0.4.tgz",
       "integrity": "sha1-VRdIm1RwkbCTDglWVM7SXul+lJE=",
       "dev": true,
       "requires": {
@@ -1235,7 +1235,7 @@
     },
     "is-symbol": {
       "version": "1.0.2",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/is-symbol/-/is-symbol-1.0.2.tgz",
+      "resolved": "https://registry.npmjs.org/is-symbol/-/is-symbol-1.0.2.tgz",
       "integrity": "sha512-HS8bZ9ox60yCJLH9snBpIwv9pYUAkcuLhSA1oero1UB5y9aiQpRA8y2ex945AOtCZL1lJDeIk3G5LthswI46Lw==",
       "dev": true,
       "requires": {
@@ -1459,19 +1459,19 @@
     },
     "json-schema-traverse": {
       "version": "0.4.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
+      "resolved": "https://registry.npmjs.org/json-schema-traverse/-/json-schema-traverse-0.4.1.tgz",
       "integrity": "sha512-xbbCH5dCYU5T8LcEhhuh7HJ88HXuW3qsI3Y0zOZFKfZEHcpWiHU/Jxzk629Brsab/mMiHQti9wMP+845RPe3Vg==",
       "dev": true
     },
     "json-stable-stringify-without-jsonify": {
       "version": "1.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/json-stable-stringify-without-jsonify/-/json-stable-stringify-without-jsonify-1.0.1.tgz",
       "integrity": "sha1-nbe1lJatPzz+8wp1FC0tkwrXJlE=",
       "dev": true
     },
     "jsonfile": {
       "version": "4.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/jsonfile/-/jsonfile-4.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/jsonfile/-/jsonfile-4.0.0.tgz",
       "integrity": "sha1-h3Gq4HmbZAdrdmQPygWPnBDjPss=",
       "requires": {
         "graceful-fs": "^4.1.6"
@@ -1604,7 +1604,7 @@
     },
     "mimic-fn": {
       "version": "1.2.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/mimic-fn/-/mimic-fn-1.2.0.tgz",
+      "resolved": "https://registry.npmjs.org/mimic-fn/-/mimic-fn-1.2.0.tgz",
       "integrity": "sha512-jf84uxzwiuiIVKiOLpfYk7N46TSy8ubTonmneY9vrpHNAnp0QBt2BxWV9dO3/j+BoVAb+a5G6YDPW3M5HOdMWQ==",
       "dev": true
     },
@@ -1640,13 +1640,13 @@
     },
     "mute-stream": {
       "version": "0.0.7",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/mute-stream/-/mute-stream-0.0.7.tgz",
+      "resolved": "https://registry.npmjs.org/mute-stream/-/mute-stream-0.0.7.tgz",
       "integrity": "sha1-MHXOk7whuPq0PhvE2n6BFe0ee6s=",
       "dev": true
     },
     "natural-compare": {
       "version": "1.4.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/natural-compare/-/natural-compare-1.4.0.tgz",
+      "resolved": "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz",
       "integrity": "sha1-Sr6/7tdUHywnrPspvbvRXI1bpPc=",
       "dev": true
     },
@@ -1736,7 +1736,7 @@
     },
     "object-inspect": {
       "version": "1.6.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/object-inspect/-/object-inspect-1.6.0.tgz",
+      "resolved": "https://registry.npmjs.org/object-inspect/-/object-inspect-1.6.0.tgz",
       "integrity": "sha512-GJzfBZ6DgDAmnuaM3104jR4s1Myxr3Y3zfIyN4z3UdqN69oSRacNK8UhnobDdC+7J2AHCjGwxQubNJfE70SXXQ==",
       "dev": true
     },
@@ -1757,7 +1757,7 @@
     },
     "onetime": {
       "version": "2.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/onetime/-/onetime-2.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/onetime/-/onetime-2.0.1.tgz",
       "integrity": "sha1-BnQoIw/WdEOyeUsiu6UotoZ5YtQ=",
       "dev": true,
       "requires": {
@@ -1814,7 +1814,7 @@
     },
     "os-tmpdir": {
       "version": "1.0.2",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/os-tmpdir/-/os-tmpdir-1.0.2.tgz",
+      "resolved": "https://registry.npmjs.org/os-tmpdir/-/os-tmpdir-1.0.2.tgz",
       "integrity": "sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=",
       "dev": true
     },
@@ -1874,7 +1874,7 @@
     },
     "parent-module": {
       "version": "1.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/parent-module/-/parent-module-1.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/parent-module/-/parent-module-1.0.1.tgz",
       "integrity": "sha512-GQ2EWRpQV8/o+Aw8YqtfZZPfNRWZYkbidE9k5rpl/hC3vtHHBfGm2Ifi6qWV+coDGkrUKZAxE3Lot5kcsRlh+g==",
       "dev": true,
       "requires": {
@@ -1954,7 +1954,7 @@
     },
     "progress": {
       "version": "2.0.3",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/progress/-/progress-2.0.3.tgz",
+      "resolved": "https://registry.npmjs.org/progress/-/progress-2.0.3.tgz",
       "integrity": "sha512-7PiHtLll5LdnKIMw100I+8xJXR5gW2QwWYkT6iJva0bXitZKa/XMrSbdmg3r2Xnaidz9Qumd0VPaMrZlF9V9sA==",
       "dev": true
     },
@@ -1976,7 +1976,7 @@
     },
     "punycode": {
       "version": "2.1.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/punycode/-/punycode-2.1.1.tgz",
+      "resolved": "https://registry.npmjs.org/punycode/-/punycode-2.1.1.tgz",
       "integrity": "sha512-XRsRjdf+j5ml+y/6GKHPZbrF/8p2Yga0JPtdqTIY2Xe5ohJPD9saDJJLPvp9+NSBprVvevdXZybnj2cv8OEd0A==",
       "dev": true
     },
@@ -2003,7 +2003,7 @@
     },
     "regexpp": {
       "version": "2.0.1",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/regexpp/-/regexpp-2.0.1.tgz",
+      "resolved": "https://registry.npmjs.org/regexpp/-/regexpp-2.0.1.tgz",
       "integrity": "sha512-lv0M6+TkDVniA3aD1Eg0DVpfU/booSu7Eev3TDO/mZKHBfVjgCGTV4t4buppESEYDtkArYFOxTJWv6S5C+iaNw==",
       "dev": true
     },
@@ -2045,7 +2045,7 @@
     },
     "restore-cursor": {
       "version": "2.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/restore-cursor/-/restore-cursor-2.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/restore-cursor/-/restore-cursor-2.0.0.tgz",
       "integrity": "sha1-n37ih/gv0ybU/RYpI9YhKe7g368=",
       "dev": true,
       "requires": {
@@ -2055,7 +2055,7 @@
     },
     "resumer": {
       "version": "0.0.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/resumer/-/resumer-0.0.0.tgz",
+      "resolved": "https://registry.npmjs.org/resumer/-/resumer-0.0.0.tgz",
       "integrity": "sha1-8ej0YeQGS6Oegq883CqMiT0HZ1k=",
       "dev": true,
       "requires": {
@@ -2073,7 +2073,7 @@
     },
     "run-async": {
       "version": "2.3.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/run-async/-/run-async-2.3.0.tgz",
+      "resolved": "https://registry.npmjs.org/run-async/-/run-async-2.3.0.tgz",
       "integrity": "sha1-A3GrSuC91yDUFm19/aZP96RFpsA=",
       "dev": true,
       "requires": {
@@ -2097,7 +2097,7 @@
     },
     "safer-buffer": {
       "version": "2.1.2",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/safer-buffer/-/safer-buffer-2.1.2.tgz",
+      "resolved": "https://registry.npmjs.org/safer-buffer/-/safer-buffer-2.1.2.tgz",
       "integrity": "sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==",
       "dev": true
     },
@@ -2136,7 +2136,7 @@
     },
     "slice-ansi": {
       "version": "2.1.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/slice-ansi/-/slice-ansi-2.1.0.tgz",
+      "resolved": "https://registry.npmjs.org/slice-ansi/-/slice-ansi-2.1.0.tgz",
       "integrity": "sha512-Qu+VC3EwYLldKa1fCxuuvULvSJOKEgk9pi8dZeCVK7TqBfUNTH4sFkk4joj8afVSfAYgJoSOetjx9QWOJ5mYoQ==",
       "dev": true,
       "requires": {
@@ -2214,7 +2214,7 @@
     },
     "string.prototype.trim": {
       "version": "1.1.2",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/string.prototype.trim/-/string.prototype.trim-1.1.2.tgz",
+      "resolved": "https://registry.npmjs.org/string.prototype.trim/-/string.prototype.trim-1.1.2.tgz",
       "integrity": "sha1-0E3iyJ4Tf019IG8Ia17S+ua+jOo=",
       "dev": true,
       "requires": {
@@ -2293,7 +2293,7 @@
       "dependencies": {
         "ansi-regex": {
           "version": "4.1.0",
-          "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/ansi-regex/-/ansi-regex-4.1.0.tgz",
+          "resolved": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-4.1.0.tgz",
           "integrity": "sha512-1apePfXM1UOSqw0o9IiFAovVz9M5S1Dg+4TrDwfMewQ6p/rmMueb7tWZjQ1rx4Loy1ArBggoqGpfqqdI4rondg==",
           "dev": true
         },
@@ -2305,7 +2305,7 @@
         },
         "string-width": {
           "version": "3.1.0",
-          "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/string-width/-/string-width-3.1.0.tgz",
+          "resolved": "https://registry.npmjs.org/string-width/-/string-width-3.1.0.tgz",
           "integrity": "sha512-vafcv6KjVZKSgz06oM/H6GDBrAtz8vdhQakGjFIvNrHA6y3HCF1CInLy+QLq8dTJPQ1b+KDUqDFctkdRW44e1w==",
           "dev": true,
           "requires": {
@@ -2316,7 +2316,7 @@
         },
         "strip-ansi": {
           "version": "5.2.0",
-          "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/strip-ansi/-/strip-ansi-5.2.0.tgz",
+          "resolved": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-5.2.0.tgz",
           "integrity": "sha512-DuRs1gKbBqsMKIZlrffwlug8MHkcnpjs5VPmL1PAh+mA30U0DTotfDZ0d2UUsXpPmPmMMJ6W773MaA3J+lbiWA==",
           "dev": true,
           "requires": {
@@ -2368,7 +2368,7 @@
         },
         "minimist": {
           "version": "1.2.0",
-          "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/minimist/-/minimist-1.2.0.tgz",
+          "resolved": "https://registry.npmjs.org/minimist/-/minimist-1.2.0.tgz",
           "integrity": "sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=",
           "dev": true
         },
@@ -2385,7 +2385,7 @@
     },
     "teeny-request": {
       "version": "3.11.3",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/teeny-request/-/teeny-request-3.11.3.tgz",
+      "resolved": "https://registry.npmjs.org/teeny-request/-/teeny-request-3.11.3.tgz",
       "integrity": "sha512-CKncqSF7sH6p4rzCgkb/z/Pcos5efl0DmolzvlqRQUNcpRIruOhY9+T1FsIlyEbfWd7MsFpodROOwHYh2BaXzw==",
       "dev": true,
       "requires": {
@@ -2408,19 +2408,19 @@
     },
     "text-table": {
       "version": "0.2.0",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/text-table/-/text-table-0.2.0.tgz",
+      "resolved": "https://registry.npmjs.org/text-table/-/text-table-0.2.0.tgz",
       "integrity": "sha1-f17oI66AUgfACvLfSoTsP8+lcLQ=",
       "dev": true
     },
     "through": {
       "version": "2.3.8",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/through/-/through-2.3.8.tgz",
+      "resolved": "http://registry.npmjs.org/through/-/through-2.3.8.tgz",
       "integrity": "sha1-DdTJ/6q8NXlgsbckEV1+Doai4fU=",
       "dev": true
     },
     "tmp": {
       "version": "0.0.33",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/tmp/-/tmp-0.0.33.tgz",
+      "resolved": "https://registry.npmjs.org/tmp/-/tmp-0.0.33.tgz",
       "integrity": "sha512-jRCJlojKnZ3addtTOjdIqoRuPEKBvNXcGYqzO6zWZX8KfKEpnGY5jfggJQ3EjKuu8D4bJRr0y+cYJFmYbImXGw==",
       "dev": true,
       "requires": {
@@ -2475,12 +2475,12 @@
     },
     "universalify": {
       "version": "0.1.2",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/universalify/-/universalify-0.1.2.tgz",
+      "resolved": "https://registry.npmjs.org/universalify/-/universalify-0.1.2.tgz",
       "integrity": "sha512-rBJeI5CXAlmy1pV+617WB9J63U6XcazHHF2f2dbJix4XzpUF0RS3Zbj0FGIOCAva5P/d/GBOYaACQ1w+0azUkg=="
     },
     "uri-js": {
       "version": "4.2.2",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/uri-js/-/uri-js-4.2.2.tgz",
+      "resolved": "https://registry.npmjs.org/uri-js/-/uri-js-4.2.2.tgz",
       "integrity": "sha512-KY9Frmirql91X2Qgjry0Wd4Y+YTdrdZheS8TFwvkbLWf/G5KNJDCh6pKL5OZctEW4+0Baa5idK2ZQuELRwPznQ==",
       "dev": true,
       "requires": {
@@ -2489,7 +2489,7 @@
     },
     "urlgrey": {
       "version": "0.4.4",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/urlgrey/-/urlgrey-0.4.4.tgz",
+      "resolved": "https://registry.npmjs.org/urlgrey/-/urlgrey-0.4.4.tgz",
       "integrity": "sha1-iS/pWWCAXoVRnxzUOJ8stMu3ZS8=",
       "dev": true
     },
@@ -2590,7 +2590,7 @@
     },
     "write": {
       "version": "1.0.3",
-      "resolved": "https://nexus.code.tools.cloud.finnair.com/nexus/repository/npm/write/-/write-1.0.3.tgz",
+      "resolved": "https://registry.npmjs.org/write/-/write-1.0.3.tgz",
       "integrity": "sha512-/lg70HAjtkUgWPVZhZcm+T4hkL8Zbtp1nFNOn3lRrxnlv50SRBv7cR7RqR+GMsd3hUXy9hWBo4CHTbFTcOYwig==",
       "dev": true,
       "requires": {
