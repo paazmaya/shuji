@@ -4,6 +4,9 @@
   ],
   "commitBody": "Signed-off-by: {{{gitAuthor}}}",
   "automerge": true,
+  "labels": [
+    "dependencies"
+  ],
   "major": {
     "automerge": false
   }
