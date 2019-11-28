@@ -30,6 +30,9 @@ const handleInput = async (inputFilepath, options) => {
   const output = await readSources(input, {
     verbose: typeof options.verbose === 'boolean' ?
       options.verbose :
+      false,
+    webpack: typeof options.webpack === 'boolean' ?
+      options.webpack :
       false
   });
 

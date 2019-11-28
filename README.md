@@ -39,6 +39,7 @@ Usage: shuji [options] <file|directory>
   -v, --verbose            Verbose output, will print which file is currently being
                            processed
   -V, --version            Version number
+  -w, --webpack            Tries to unpack webpack correctly
 
 Version 0.6.1
 ```
