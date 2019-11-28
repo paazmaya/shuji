@@ -33,7 +33,6 @@ Usage: shuji [options] <file|directory>
 
   -h, --help               Help and usage instructions
   -o, --output-dir String  Output directory - default: .
-  -p, --preserve           Preserve sourcemap's original folder structure.
   -M, --match String       Regular expression for matching and filtering files -
                            default: \.map$
   -v, --verbose            Verbose output, will print which file is currently being
