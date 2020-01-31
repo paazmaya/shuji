@@ -17,6 +17,7 @@ const readSources = require('./lib/read-sources'),
  * @param {string} inputFilepath Contents of the sourceMap file
  * @param {object} options Options object
  * @param {boolean} options.verbose Shall there be more output
+ * @param {boolean} options.preserve Preserve original folder structure
  *
  * @returns {Array} Source contents mapped to file names
  */
@@ -30,6 +31,9 @@ const handleInput = async (inputFilepath, options) => {
   const output = await readSources(input, {
     verbose: typeof options.verbose === 'boolean' ?
       options.verbose :
+      false,
+    preserve: typeof options.preserve === 'boolean' ?
+      options.preserve :
       false
   });
 
