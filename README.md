@@ -85,6 +85,8 @@ Please note that any features or changed will not be merged without working unit
 
 ## Version history
 
+* `v0.7.0` (2020-02)
+  - Minimum Node.js version lifted from `8.11.1` to `10.13.0`
 * `v0.6.1` (2019-09-13)
   - Dependency update and better unit test coverage
 * `v0.6.0` (2019-05-27)
