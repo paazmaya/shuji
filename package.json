@@ -45,7 +45,7 @@
     "codecov": "3.5.0",
     "eslint": "6.3.0",
     "eslint-config-paazmaya": "6.0.0",
-    "nyc": "14.1.1",
+    "nyc": "15.0.0",
     "tape": "4.11.0"
   }
 }
