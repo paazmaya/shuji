@@ -59,6 +59,13 @@ const optsParser = optionator({
       description: 'Verbose output, will print which file is currently being processed'
     },
     {
+      option: 'preserve',
+      alias: 'p',
+      type: 'Boolean',
+      default: false,
+      description: 'Preserve sourcemap\'s original folder structure.'
+    },
+    {
       option: 'output-dir',
       alias: 'o',
       type: 'String',
