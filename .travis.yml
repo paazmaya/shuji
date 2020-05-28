@@ -1,4 +1,6 @@
-sudo: false
+# https://docs.travis-ci.com/user/build-config-validation/
+version: ~> 1.0
+
 language: node_js
 node_js:
   - "10"
@@ -9,6 +11,6 @@ cache:
 script:
   - npm run lint
   - npm test
-matrix:
+jobs:
   fast_finish: true
 after_script: "npm run coverage"
