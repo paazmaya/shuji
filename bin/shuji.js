@@ -70,6 +70,13 @@ const optsParser = optionator({
       type: 'String',
       default: '\\.map$',
       description: 'Regular expression for matching and filtering files'
+    },
+    {
+      option: 'webpack',
+      alias: 'w',
+      type: 'Boolean',
+      default: false,
+      description: 'Tries to unpack webpack correctly'
     }
   ]
 });
