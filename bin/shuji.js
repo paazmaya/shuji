@@ -44,6 +44,27 @@ const optsParser = optionator({
       description: 'Help and usage instructions'
     },
     {
+      option: 'match',
+      alias: 'M',
+      type: 'String',
+      default: '\\.map$',
+      description: 'Regular expression for matching and filtering files'
+    },
+    {
+      option: 'output-dir',
+      alias: 'o',
+      type: 'String',
+      default: '.',
+      description: 'Output directory'
+    },
+    {
+      option: 'preserve',
+      alias: 'p',
+      type: 'Boolean',
+      default: false,
+      description: 'Preserve sourcemap\'s original folder structure'
+    },
+    {
       option: 'version',
       alias: 'V',
       type: 'Boolean',
@@ -56,20 +77,6 @@ const optsParser = optionator({
       type: 'Boolean',
       default: false,
       description: 'Verbose output, will print which file is currently being processed'
-    },
-    {
-      option: 'output-dir',
-      alias: 'o',
-      type: 'String',
-      default: '.',
-      description: 'Output directory'
-    },
-    {
-      option: 'match',
-      alias: 'M',
-      type: 'String',
-      default: '\\.map$',
-      description: 'Regular expression for matching and filtering files'
     }
   ]
 });
@@ -137,14 +144,9 @@ if (!fs.existsSync(outputDir)) {
 
 // Process then...
 fileList.forEach(async (inputFilepath) => {
-
-  const outdir = path.join(outputDir, path.dirname(inputFilepath));
-  fs.ensureDirSync(outdir);
-
   const sourceFiles = await shuji(inputFilepath, opts);
 
   sourceFiles.forEach(([filename, content]) => {
-    writeSources(filename, content, outdir, opts);
+    writeSources(filename, content, outputDir, opts);
   });
-
 });
