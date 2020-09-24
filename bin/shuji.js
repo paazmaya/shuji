@@ -10,7 +10,6 @@
  * Licensed under the MIT license
  */
 
-'use strict';
 
 const path = require('path');
 

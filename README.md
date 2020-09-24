@@ -21,7 +21,7 @@ Elevated privileges might be needed via `sudo`, depending on the platform. In mo
 npm install --global shuji
 ```
 
-Please note that the minimum supported version of [Node.js](https://nodejs.org/en/) is `8.11.1`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule).
+Please note that the minimum supported version of [Node.js](https://nodejs.org/en/) is `10.13.0`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule).
 
 ## Command line options
 
@@ -40,7 +40,7 @@ Usage: shuji [options] <file|directory>
                            processed
   -V, --version            Version number
 
-Version 0.5.0
+Version 0.6.1
 ```
 
 ## Testing
@@ -84,6 +84,12 @@ There should be no errors appearing after any JavaScript file changes.
 Please note that any features or changed will not be merged without working unit tests.
 
 ## Version history
+
+* `v0.7.0` (2020-06)
+  - Minimum Node.js version lifted from `8.11.1` to `10.13.0`
+  - Run tests also against Node.js version 14. Now versions 10 (Travis), 12 (AppVeyor), and 14 (Travis) of Node.js are covered
+* `v0.6.1` (2019-09-13)
+  - Dependency update and better unit test coverage
 * `v0.6.0` (2019-05-27)
   - Removed the option for directory recursion, it is now always a recursive operation
   - Support for reading inline source maps, from JavaScript and CSS files
