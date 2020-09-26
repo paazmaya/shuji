@@ -8,7 +8,6 @@
  * Licensed under the MIT license
  */
 
-
 const readSources = require('./lib/read-sources'),
   findMap = require('./lib/find-map');
 

@@ -77,6 +77,27 @@ const optsParser = optionator({
       type: 'Boolean',
       default: false,
       description: 'Verbose output, will print which file is currently being processed'
+    },
+    {
+      option: 'output-dir',
+      alias: 'o',
+      type: 'String',
+      default: '.',
+      description: 'Output directory'
+    },
+    {
+      option: 'preserve',
+      alias: 'p',
+      type: 'Boolean',
+      default: false,
+      description: 'Preserve the original folder structure under the current directory'
+    },
+    {
+      option: 'match',
+      alias: 'M',
+      type: 'String',
+      default: '\\.map$',
+      description: 'Regular expression for matching and filtering files'
     }
   ]
 });
