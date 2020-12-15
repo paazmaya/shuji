@@ -18,7 +18,7 @@ tape('findFiles - got few map files', (test) => {
 
   const output = findFiles('tests/fixtures', /\.map$/);
 
-  test.equal(output.length, 4);
+  test.equal(output.length, 5);
 });
 
 tape('findFiles - got two .min.js files', (test) => {
@@ -26,7 +26,7 @@ tape('findFiles - got two .min.js files', (test) => {
 
   const output = findFiles('tests/fixtures', /\.min\.js$/);
 
-  test.equal(output.length, 2);
+  test.equal(output.length, 3);
 });
 
 tape('findFiles - not even existing', (test) => {

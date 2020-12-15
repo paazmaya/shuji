@@ -61,7 +61,7 @@ tape('cli should create folder for output', (test) => {
       test.fail(error);
     }
     test.ok(fs.existsSync('tmp/out'), 'Temporary out folder exists');
-    console.log(stdout);
+    // console.log(stdout);
   });
 
 });
@@ -88,7 +88,23 @@ tape('cli should read match argument', (test) => {
       test.fail(error);
     }
     test.ok(fs.existsSync('tmp/inline'), 'Temporary inline folder exists');
-    console.log(stdout);
+    // console.log(stdout);
+  });
+
+});
+
+tape('cli should preserve folder structure', (test) => {
+  test.plan(4);
+
+  execFile('node', [pkg.bin, '-o', 'tmp/preserve-folder-structure', '-v', 'tests/fixtures/preserve-folder-structure.min.js.map', '--preserve'], null, (error, stdout) => {
+    if (error) {
+      test.fail(error);
+    }
+    test.ok(fs.existsSync('tmp/preserve-folder-structure'), 'Temporary preserve-folder-structure folder exists');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack:/my-webpack-project/classes'), 'Temporary classes folder exists');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack:/my-webpack-project/classes/person.js'), 'Temporary person.js exists');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack:/my-webpack-project/index.js'), 'Temporary index.js exists');
+    // console.log(stdout);
   });
 
 });
