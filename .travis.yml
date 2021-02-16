@@ -4,7 +4,6 @@ version: ~> 1.0
 language: node_js
 node_js:
   - "10"
-  - "14"
 cache:
   directories:
     - node_modules

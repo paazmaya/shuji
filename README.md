@@ -91,9 +91,9 @@ Please note that any features or changed will not be merged without working unit
 
 ## Version history
 
-* `v0.7.0` (2020-06)
+* `v0.7.0` (2021-02-)
   - Minimum Node.js version lifted from `8.11.1` to `10.13.0`
-  - Run tests also against Node.js version 14. Now versions 10 (Travis), 12 (AppVeyor), and 14 (Travis) of Node.js are covered
+  - Run tests also against Node.js version 14. Now versions 10 (Travis), 12 (AppVeyor), and 14 (GitHub Actions) of Node.js are covered
 * `v0.6.1` (2019-09-13)
   - Dependency update and better unit test coverage
 * `v0.6.0` (2019-05-27)
