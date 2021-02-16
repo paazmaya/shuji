@@ -24,7 +24,7 @@ npm install --global shuji
 Usage example:
 
 ```sh
-shuji file.js.map --preserve -o folder
+shuji file.js.map -o folder
 ```
 
 Please note that the minimum supported version of [Node.js](https://nodejs.org/en/) is `10.13.0`, which is [the active Long Term Support (LTS) version](https://github.com/nodejs/Release#release-schedule).
@@ -91,7 +91,7 @@ Please note that any features or changed will not be merged without working unit
 
 ## Version history
 
-* `v0.7.0` (2021-02-)
+* `v0.7.0` (2021-02-16)
   - Minimum Node.js version lifted from `8.11.1` to `10.13.0`
   - Run tests also against Node.js version 14. Now versions 10 (Travis), 12 (AppVeyor), and 14 (GitHub Actions) of Node.js are covered
 * `v0.6.1` (2019-09-13)
