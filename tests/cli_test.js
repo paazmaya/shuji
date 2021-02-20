@@ -101,9 +101,9 @@ tape('cli should preserve folder structure', (test) => {
       test.fail(error);
     }
     test.ok(fs.existsSync('tmp/preserve-folder-structure'), 'Temporary preserve-folder-structure folder exists');
-    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack:/my-webpack-project/classes'), 'Temporary classes folder exists');
-    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack:/my-webpack-project/classes/person.js'), 'Temporary person.js exists');
-    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack:/my-webpack-project/index.js'), 'Temporary index.js exists');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/my-webpack-project/classes'), 'Temporary classes folder exists');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/my-webpack-project/classes/person.js'), 'Temporary person.js exists');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/my-webpack-project/index.js'), 'Temporary index.js exists');
     // console.log(stdout);
   });
 
