@@ -10,7 +10,6 @@
  * Licensed under the MIT license
  */
 
-
 const path = require('path');
 
 const optionator = require('optionator'),
@@ -63,14 +62,14 @@ const optsParser = optionator({
       type: 'String',
       default: '.',
       description: 'Output directory'
-    }, /*
+    },
     {
       option: 'preserve',
       alias: 'p',
       type: 'Boolean',
       default: false,
       description: 'Preserve the original folder structure under the current directory'
-    },*/
+    },
     {
       option: 'match',
       alias: 'M',

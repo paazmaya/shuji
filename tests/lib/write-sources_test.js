@@ -8,7 +8,6 @@
  * Licensed under the MIT license
  */
 
-
 const tape = require('tape');
 
 const writeSources = require('../../lib/write-sources');
