@@ -43,7 +43,7 @@
   "devDependencies": {
     "babel-eslint": "10.1.0",
     "codecov": "3.8.3",
-    "eslint": "8.4.0",
+    "eslint": "8.4.1",
     "eslint-config-paazmaya": "7.2.0",
     "eslint-plugin-node": "11.1.0",
     "nyc": "15.1.0",
