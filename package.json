@@ -44,7 +44,7 @@
     "babel-eslint": "10.1.0",
     "codecov": "3.8.3",
     "eslint": "8.13.0",
-    "eslint-config-paazmaya": "7.2.0",
+    "eslint-config-paazmaya": "8.0.0",
     "eslint-plugin-node": "11.1.0",
     "nyc": "15.1.0",
     "tape": "5.5.3"
