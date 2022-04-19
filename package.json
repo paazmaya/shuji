@@ -36,9 +36,9 @@
   },
   "homepage": "https://github.com/paazmaya/shuji#readme",
   "dependencies": {
-    "fs-extra": "^10.0.1",
-    "optionator": "^0.9.1",
-    "source-map": "^0.7.3"
+    "fs-extra": "10.1.0",
+    "optionator": "0.9.1",
+    "source-map": "0.7.3"
   },
   "devDependencies": {
     "babel-eslint": "10.1.0",
