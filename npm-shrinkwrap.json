@@ -20,7 +20,7 @@
         "babel-eslint": "10.1.0",
         "codecov": "3.8.3",
         "eslint": "8.13.0",
-        "eslint-config-paazmaya": "7.2.0",
+        "eslint-config-paazmaya": "8.0.0",
         "eslint-plugin-node": "11.1.0",
         "nyc": "15.1.0",
         "tape": "5.5.3"
@@ -1004,12 +1004,12 @@
       }
     },
     "node_modules/eslint-config-paazmaya": {
-      "version": "7.2.0",
-      "resolved": "https://registry.npmjs.org/eslint-config-paazmaya/-/eslint-config-paazmaya-7.2.0.tgz",
-      "integrity": "sha512-NSYSaEVAnpsFRD6a+TfoB2FpPmolL+hg7kvWtyX3b4OpiSUBt5qmnWSvKG+qc7ueHaFFrU3o5S2TzvxJUXytOA==",
+      "version": "8.0.0",
+      "resolved": "https://registry.npmjs.org/eslint-config-paazmaya/-/eslint-config-paazmaya-8.0.0.tgz",
+      "integrity": "sha512-LRbDsrc8Tqhb2dWvU6etbAMfO438O1FN2iWPi/SsU5bH/EqVUyz+ybIwOQKSKdMSMc7BsdAS19KC9CnX/ubeFA==",
       "dev": true,
       "engines": {
-        "node": ">=10.13.0"
+        "node": ">=14.15.0"
       }
     },
     "node_modules/eslint-plugin-es": {
@@ -4336,9 +4336,9 @@
       }
     },
     "eslint-config-paazmaya": {
-      "version": "7.2.0",
-      "resolved": "https://registry.npmjs.org/eslint-config-paazmaya/-/eslint-config-paazmaya-7.2.0.tgz",
-      "integrity": "sha512-NSYSaEVAnpsFRD6a+TfoB2FpPmolL+hg7kvWtyX3b4OpiSUBt5qmnWSvKG+qc7ueHaFFrU3o5S2TzvxJUXytOA==",
+      "version": "8.0.0",
+      "resolved": "https://registry.npmjs.org/eslint-config-paazmaya/-/eslint-config-paazmaya-8.0.0.tgz",
+      "integrity": "sha512-LRbDsrc8Tqhb2dWvU6etbAMfO438O1FN2iWPi/SsU5bH/EqVUyz+ybIwOQKSKdMSMc7BsdAS19KC9CnX/ubeFA==",
       "dev": true
     },
     "eslint-plugin-es": {
