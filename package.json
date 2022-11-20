@@ -3,9 +3,10 @@
   "version": "0.7.0",
   "description": "Reverse engineering JavaScript and CSS sources from sourcemaps",
   "main": "index.js",
+  "type": "module",
   "bin": "bin/shuji.js",
   "scripts": {
-    "lint": "eslint index.js bin lib",
+    "lint": "eslint *.js bin lib",
     "test": "nyc --all --exclude tests --exclude tmp tape tests/*_test.js tests/lib/*_test.js && rm -rf tmp",
     "coverage": "nyc --all --exclude tests --exclude tmp report --reporter=text-lcov > coverage.lcov && codecov"
   },
@@ -43,8 +44,8 @@
   "devDependencies": {
     "babel-eslint": "10.1.0",
     "codecov": "3.8.3",
-    "eslint": "8.23.1",
-    "eslint-config-paazmaya": "8.0.0",
+    "eslint": "8.28.0",
+    "eslint-config-paazmaya": "9.0.0",
     "eslint-plugin-node": "11.1.0",
     "nyc": "15.1.0",
     "tape": "5.6.0"
