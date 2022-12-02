@@ -8,9 +8,9 @@
  * Licensed under the MIT license
  */
 
-const tape = require('tape');
+import tape from 'tape';
 
-const findFiles = require('../../lib/find-files');
+import findFiles from '../../lib/find-files.js';
 
 tape('findFiles - got few map files', (test) => {
   test.plan(1);

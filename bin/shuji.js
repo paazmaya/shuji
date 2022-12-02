@@ -10,26 +10,16 @@
  * Licensed under the MIT license
  */
 
-const path = require('path');
+import path from 'path';
 
-const optionator = require('optionator'),
-  fs = require('fs-extra');
+import optionator from 'optionator';
+import fs from 'fs-extra';
 
-const shuji = require('../index'),
-  writeSources = require('../lib/write-sources'),
-  findFiles = require('../lib/find-files');
+import shuji from '../index.js';
+import writeSources from '../lib/write-sources.js';
+import findFiles from '../lib/find-files.js';
 
-let pkg;
-
-try {
-  const packageJson = fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8');
-  pkg = JSON.parse(packageJson);
-}
-catch (error) {
-  console.error('Could not read/parse "package.json", quite strange...');
-  console.error(error);
-  process.exit(1);
-}
+import pkg from '../package.json' assert { type: 'json' };
 
 const optsParser = optionator({
   prepend: `Usage: ${pkg.name} [options] <file|directory>`,

@@ -8,15 +8,15 @@
  * Licensed under the MIT license
  */
 
-const fs = require('fs'),
-  path = require('path'),
-  {
+import fs from 'fs';
+import path from 'path';
+import {
     execFile
-  } = require('child_process');
+} from 'child_process';
 
-const tape = require('tape');
+import tape from 'tape';
 
-const pkg = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'package.json'), 'utf8'));
+import pkg from '../package.json' assert { type: 'json' };
 
 tape('cli should output version number', (test) => {
   test.plan(1);

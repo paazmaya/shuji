@@ -8,11 +8,11 @@
  * Licensed under the MIT license
  */
 
-const fs = require('fs');
+import fs from 'fs';
 
-const tape = require('tape');
+import tape from 'tape';
 
-const readSources = require('../../lib/read-sources');
+import readSources from '../../lib/read-sources.js';
 
 tape('readSources - nothing', (test) => {
   test.plan(1);

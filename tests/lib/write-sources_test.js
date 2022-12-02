@@ -8,9 +8,9 @@
  * Licensed under the MIT license
  */
 
-const tape = require('tape');
+import tape from 'tape';
 
-const writeSources = require('../../lib/write-sources');
+import writeSources from '../../lib/write-sources.js';
 
 tape('writeSources - nothing', (test) => {
   test.plan(1);

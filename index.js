@@ -8,8 +8,8 @@
  * Licensed under the MIT license
  */
 
-const readSources = require('./lib/read-sources'),
-  findMap = require('./lib/find-map');
+import readSources from './lib/read-sources.js';
+import findMap from './lib/find-map.js';
 
 /**
  * @param {string} inputFilepath Contents of the sourceMap file
@@ -44,4 +44,4 @@ const handleInput = async (inputFilepath, options) => {
   return sourceFiles;
 };
 
-module.exports = handleInput;
+export default handleInput;

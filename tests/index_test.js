@@ -8,9 +8,9 @@
  * Licensed under the MIT license
  */
 
-const tape = require('tape');
+import tape from 'tape';
 
-const shuji = require('../index');
+import shuji from '../index.js';
 
 tape('function is exported', (test) => {
   test.plan(1);

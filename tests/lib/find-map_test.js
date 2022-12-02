@@ -8,9 +8,9 @@
  * Licensed under the MIT license
  */
 
-const tape = require('tape');
+import tape from 'tape';
 
-const findMap = require('../../lib/find-map');
+import findMap from '../../lib/find-map.js';
 
 tape('findMap - LICENSE', (test) => {
   test.plan(1);
