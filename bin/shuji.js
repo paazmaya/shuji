@@ -19,7 +19,9 @@ import shuji from '../index.js';
 import writeSources from '../lib/write-sources.js';
 import findFiles from '../lib/find-files.js';
 
-import pkg from '../package.json' assert { type: 'json' };
+/* import pkg from '../package.json' assert { type: 'json' };*/
+const packageFile = new URL('../package.json', import.meta.url);
+const pkg = JSON.parse(fs.readFileSync(packageFile, 'utf8'));
 
 const optsParser = optionator({
   prepend: `Usage: ${pkg.name} [options] <file|directory>`,
