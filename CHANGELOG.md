@@ -4,6 +4,9 @@ This changelog covers the version history and possible upcoming changes.
 It follows the guidance from https://keepachangelog.com/en/1.0.0/.
 
 ## Unreleased
+
+## `v0.8.0` (2023-06-05)
+
 - Minimum supported Node.js version lifted from `10.13.0` to `14.15.0`
 
 ## `v0.7.0` (2021-02-16)
