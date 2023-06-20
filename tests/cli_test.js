@@ -10,7 +10,7 @@
 
 import fs from 'fs';
 import {
-    execFile
+  execFile
 } from 'child_process';
 
 import tape from 'tape';
