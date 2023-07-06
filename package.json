@@ -42,7 +42,7 @@
     "source-map": "0.7.4"
   },
   "devDependencies": {
-    "@babel/eslint-parser": "7.22.6",
+    "@babel/eslint-parser": "7.22.7",
     "codecov": "3.8.3",
     "eslint": "8.44.0",
     "eslint-config-paazmaya": "9.0.1",
