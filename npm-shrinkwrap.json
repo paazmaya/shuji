@@ -23,7 +23,7 @@
         "eslint": "8.51.0",
         "eslint-config-paazmaya": "9.0.1",
         "eslint-plugin-node": "11.1.0",
-        "tape": "5.7.1"
+        "tape": "5.7.2"
       },
       "engines": {
         "node": ">=14.15.0"
@@ -918,13 +918,14 @@
       }
     },
     "node_modules/call-bind": {
-      "version": "1.0.2",
-      "resolved": "https://registry.npmjs.org/call-bind/-/call-bind-1.0.2.tgz",
-      "integrity": "sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==",
+      "version": "1.0.5",
+      "resolved": "https://registry.npmjs.org/call-bind/-/call-bind-1.0.5.tgz",
+      "integrity": "sha512-C3nQxfFZxFRVoJoGKKI8y3MOEo129NQ+FgQ08iye+Mk4zNZZGdjfs06bVTr+DBSlA66Q2VEcMki/cUCP4SercQ==",
       "dev": true,
       "dependencies": {
-        "function-bind": "^1.1.1",
-        "get-intrinsic": "^1.0.2"
+        "function-bind": "^1.1.2",
+        "get-intrinsic": "^1.2.1",
+        "set-function-length": "^1.1.1"
       },
       "funding": {
         "url": "https://github.com/sponsors/ljharb"
@@ -1107,9 +1108,9 @@
       "integrity": "sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ="
     },
     "node_modules/define-data-property": {
-      "version": "1.1.0",
-      "resolved": "https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.0.tgz",
-      "integrity": "sha512-UzGwzcjyv3OtAvolTj1GoyNYzfFR+iqbGjcnBEENZVCpM4/Ng1yhGNvS3lR/xDS74Tb2wGG9WzNSNIOS9UVb2g==",
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.1.tgz",
+      "integrity": "sha512-E7uGkTzkk1d0ByLeSc6ZsFS79Axg+m1P/VsgYsxHgiuc3tFSj+MjMIwe90FC4lOAZzNBdY7kkO2P2wKdsQ1vgQ==",
       "dev": true,
       "dependencies": {
         "get-intrinsic": "^1.2.1",
@@ -1814,10 +1815,13 @@
       "dev": true
     },
     "node_modules/function-bind": {
-      "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz",
-      "integrity": "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==",
-      "dev": true
+      "version": "1.1.2",
+      "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz",
+      "integrity": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==",
+      "dev": true,
+      "funding": {
+        "url": "https://github.com/sponsors/ljharb"
+      }
     },
     "node_modules/function.prototype.name": {
       "version": "1.1.6",
@@ -2078,6 +2082,18 @@
       },
       "funding": {
         "url": "https://github.com/sponsors/ljharb"
+      }
+    },
+    "node_modules/hasown": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/hasown/-/hasown-2.0.0.tgz",
+      "integrity": "sha512-vUptKVTpIJhcczKBbgnS+RtcuYMB8+oNzPK2/Hp3hanz8JmpATdmmgLgSaadVREkDm+e2giHwY3ZRkyjSIDDFA==",
+      "dev": true,
+      "dependencies": {
+        "function-bind": "^1.1.2"
+      },
+      "engines": {
+        "node": ">= 0.4"
       }
     },
     "node_modules/html-escaper": {
@@ -2721,15 +2737,20 @@
       }
     },
     "node_modules/mock-property": {
-      "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/mock-property/-/mock-property-1.0.0.tgz",
-      "integrity": "sha512-imC60k5A55GPUU43PqczbubOyyxCudIgneACKzL3PKfsBk08dc1HgNNU8siQbEIAPPjVUhc+gb0v0ypZ/iP9pw==",
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/mock-property/-/mock-property-1.0.3.tgz",
+      "integrity": "sha512-2emPTb1reeLLYwHxyVx993iYyCHEiRRO+y8NFXFPL5kl5q14sgTK76cXyEKkeKCHeRw35SfdkUJ10Q1KfHuiIQ==",
       "dev": true,
       "dependencies": {
-        "functions-have-names": "^1.2.2",
-        "has": "^1.0.3",
+        "define-data-property": "^1.1.1",
+        "functions-have-names": "^1.2.3",
+        "gopd": "^1.0.1",
         "has-property-descriptors": "^1.0.0",
+        "hasown": "^2.0.0",
         "isarray": "^2.0.5"
+      },
+      "engines": {
+        "node": ">= 0.4"
       },
       "funding": {
         "url": "https://github.com/sponsors/ljharb"
@@ -2775,9 +2796,9 @@
       "peer": true
     },
     "node_modules/object-inspect": {
-      "version": "1.12.3",
-      "resolved": "https://registry.npmjs.org/object-inspect/-/object-inspect-1.12.3.tgz",
-      "integrity": "sha512-geUvdk7c+eizMNUDkRpW1wJwgfOiOeHbxBR/hLXK1aT6zmVSO0jsQcs7fj6MGw89jC/cjGfLcNOrtMYtGqm81g==",
+      "version": "1.13.1",
+      "resolved": "https://registry.npmjs.org/object-inspect/-/object-inspect-1.13.1.tgz",
+      "integrity": "sha512-5qoj1RUiKOMsCCNLV1CBiPYE10sziTsnmNxkAI/rZhiD63CF7IqdFGC/XzjWjpSgLf0LxXX3bDFIh0E18f6UhQ==",
       "dev": true,
       "funding": {
         "url": "https://github.com/sponsors/ljharb"
@@ -3125,6 +3146,21 @@
         "semver": "bin/semver.js"
       }
     },
+    "node_modules/set-function-length": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/set-function-length/-/set-function-length-1.1.1.tgz",
+      "integrity": "sha512-VoaqjbBJKiWtg4yRcKBQ7g7wnGnLV3M8oLvVWwOk2PdYY6PEFegR1vezXR0tw6fZGF9csVakIRjrJiy2veSBFQ==",
+      "dev": true,
+      "dependencies": {
+        "define-data-property": "^1.1.1",
+        "get-intrinsic": "^1.2.1",
+        "gopd": "^1.0.1",
+        "has-property-descriptors": "^1.0.0"
+      },
+      "engines": {
+        "node": ">= 0.4"
+      }
+    },
     "node_modules/set-function-name": {
       "version": "2.0.1",
       "resolved": "https://registry.npmjs.org/set-function-name/-/set-function-name-2.0.1.tgz",
@@ -3330,28 +3366,28 @@
       }
     },
     "node_modules/tape": {
-      "version": "5.7.1",
-      "resolved": "https://registry.npmjs.org/tape/-/tape-5.7.1.tgz",
-      "integrity": "sha512-5U2nU0PbvWXXtJxE0hFv78VSyhJiyEPq1wNtMCWUxt17SZbeBqs9V5zcyDqkyguYN39d8qAjZxfFkjJ1+kB4yA==",
+      "version": "5.7.2",
+      "resolved": "https://registry.npmjs.org/tape/-/tape-5.7.2.tgz",
+      "integrity": "sha512-cvSyprYahyOYXbtBwV/B7nrx7kINeZ3VZ9fKoSywoPwZN3oQ1WVLvt+Vl0XCz/gi37CDrY3dlW790nzviIzoPw==",
       "dev": true,
       "dependencies": {
         "@ljharb/resumer": "^0.0.1",
         "@ljharb/through": "^2.3.11",
         "array.prototype.every": "^1.1.5",
-        "call-bind": "^1.0.2",
+        "call-bind": "^1.0.5",
         "deep-equal": "^2.2.2",
         "defined": "^1.0.1",
         "dotignore": "^0.1.2",
         "for-each": "^0.3.3",
         "get-package-type": "^0.1.0",
         "glob": "^7.2.3",
-        "has": "^1.0.3",
         "has-dynamic-import": "^2.0.1",
+        "hasown": "^2.0.0",
         "inherits": "^2.0.4",
         "is-regex": "^1.1.4",
         "minimist": "^1.2.8",
-        "mock-property": "^1.0.0",
-        "object-inspect": "^1.12.3",
+        "mock-property": "^1.0.2",
+        "object-inspect": "^1.13.1",
         "object-is": "^1.1.5",
         "object-keys": "^1.1.1",
         "object.assign": "^4.1.4",
@@ -4473,13 +4509,14 @@
       }
     },
     "call-bind": {
-      "version": "1.0.2",
-      "resolved": "https://registry.npmjs.org/call-bind/-/call-bind-1.0.2.tgz",
-      "integrity": "sha512-7O+FbCihrB5WGbFYesctwmTKae6rOiIzmz1icreWJ+0aA7LJfuqhEso2T9ncpcFtzMQtzXf2QGGueWJGTYsqrA==",
+      "version": "1.0.5",
+      "resolved": "https://registry.npmjs.org/call-bind/-/call-bind-1.0.5.tgz",
+      "integrity": "sha512-C3nQxfFZxFRVoJoGKKI8y3MOEo129NQ+FgQ08iye+Mk4zNZZGdjfs06bVTr+DBSlA66Q2VEcMki/cUCP4SercQ==",
       "dev": true,
       "requires": {
-        "function-bind": "^1.1.1",
-        "get-intrinsic": "^1.0.2"
+        "function-bind": "^1.1.2",
+        "get-intrinsic": "^1.2.1",
+        "set-function-length": "^1.1.1"
       }
     },
     "callsites": {
@@ -4615,9 +4652,9 @@
       "integrity": "sha1-s2nW+128E+7PUk+RsHD+7cNXzzQ="
     },
     "define-data-property": {
-      "version": "1.1.0",
-      "resolved": "https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.0.tgz",
-      "integrity": "sha512-UzGwzcjyv3OtAvolTj1GoyNYzfFR+iqbGjcnBEENZVCpM4/Ng1yhGNvS3lR/xDS74Tb2wGG9WzNSNIOS9UVb2g==",
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/define-data-property/-/define-data-property-1.1.1.tgz",
+      "integrity": "sha512-E7uGkTzkk1d0ByLeSc6ZsFS79Axg+m1P/VsgYsxHgiuc3tFSj+MjMIwe90FC4lOAZzNBdY7kkO2P2wKdsQ1vgQ==",
       "dev": true,
       "requires": {
         "get-intrinsic": "^1.2.1",
@@ -5148,9 +5185,9 @@
       "dev": true
     },
     "function-bind": {
-      "version": "1.1.1",
-      "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.1.tgz",
-      "integrity": "sha512-yIovAzMX49sF8Yl58fSCWJ5svSLuaibPxXQJFLmBObTuCr0Mf1KiPopGM9NiFjiYBCbfaa2Fh6breQ6ANVTI0A==",
+      "version": "1.1.2",
+      "resolved": "https://registry.npmjs.org/function-bind/-/function-bind-1.1.2.tgz",
+      "integrity": "sha512-7XHNxH7qX9xG5mIwxkhumTox/MIRNcOgDrxWsMt2pAr23WHp6MrRlN7FBSFpCpr+oVO0F744iUgR82nJMfG2SA==",
       "dev": true
     },
     "function.prototype.name": {
@@ -5331,6 +5368,15 @@
       "dev": true,
       "requires": {
         "has-symbols": "^1.0.2"
+      }
+    },
+    "hasown": {
+      "version": "2.0.0",
+      "resolved": "https://registry.npmjs.org/hasown/-/hasown-2.0.0.tgz",
+      "integrity": "sha512-vUptKVTpIJhcczKBbgnS+RtcuYMB8+oNzPK2/Hp3hanz8JmpATdmmgLgSaadVREkDm+e2giHwY3ZRkyjSIDDFA==",
+      "dev": true,
+      "requires": {
+        "function-bind": "^1.1.2"
       }
     },
     "html-escaper": {
@@ -5796,14 +5842,16 @@
       "dev": true
     },
     "mock-property": {
-      "version": "1.0.0",
-      "resolved": "https://registry.npmjs.org/mock-property/-/mock-property-1.0.0.tgz",
-      "integrity": "sha512-imC60k5A55GPUU43PqczbubOyyxCudIgneACKzL3PKfsBk08dc1HgNNU8siQbEIAPPjVUhc+gb0v0ypZ/iP9pw==",
+      "version": "1.0.3",
+      "resolved": "https://registry.npmjs.org/mock-property/-/mock-property-1.0.3.tgz",
+      "integrity": "sha512-2emPTb1reeLLYwHxyVx993iYyCHEiRRO+y8NFXFPL5kl5q14sgTK76cXyEKkeKCHeRw35SfdkUJ10Q1KfHuiIQ==",
       "dev": true,
       "requires": {
-        "functions-have-names": "^1.2.2",
-        "has": "^1.0.3",
+        "define-data-property": "^1.1.1",
+        "functions-have-names": "^1.2.3",
+        "gopd": "^1.0.1",
         "has-property-descriptors": "^1.0.0",
+        "hasown": "^2.0.0",
         "isarray": "^2.0.5"
       }
     },
@@ -5836,9 +5884,9 @@
       "peer": true
     },
     "object-inspect": {
-      "version": "1.12.3",
-      "resolved": "https://registry.npmjs.org/object-inspect/-/object-inspect-1.12.3.tgz",
-      "integrity": "sha512-geUvdk7c+eizMNUDkRpW1wJwgfOiOeHbxBR/hLXK1aT6zmVSO0jsQcs7fj6MGw89jC/cjGfLcNOrtMYtGqm81g==",
+      "version": "1.13.1",
+      "resolved": "https://registry.npmjs.org/object-inspect/-/object-inspect-1.13.1.tgz",
+      "integrity": "sha512-5qoj1RUiKOMsCCNLV1CBiPYE10sziTsnmNxkAI/rZhiD63CF7IqdFGC/XzjWjpSgLf0LxXX3bDFIh0E18f6UhQ==",
       "dev": true
     },
     "object-is": {
@@ -6064,6 +6112,18 @@
       "integrity": "sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==",
       "dev": true
     },
+    "set-function-length": {
+      "version": "1.1.1",
+      "resolved": "https://registry.npmjs.org/set-function-length/-/set-function-length-1.1.1.tgz",
+      "integrity": "sha512-VoaqjbBJKiWtg4yRcKBQ7g7wnGnLV3M8oLvVWwOk2PdYY6PEFegR1vezXR0tw6fZGF9csVakIRjrJiy2veSBFQ==",
+      "dev": true,
+      "requires": {
+        "define-data-property": "^1.1.1",
+        "get-intrinsic": "^1.2.1",
+        "gopd": "^1.0.1",
+        "has-property-descriptors": "^1.0.0"
+      }
+    },
     "set-function-name": {
       "version": "2.0.1",
       "resolved": "https://registry.npmjs.org/set-function-name/-/set-function-name-2.0.1.tgz",
@@ -6218,28 +6278,28 @@
       "dev": true
     },
     "tape": {
-      "version": "5.7.1",
-      "resolved": "https://registry.npmjs.org/tape/-/tape-5.7.1.tgz",
-      "integrity": "sha512-5U2nU0PbvWXXtJxE0hFv78VSyhJiyEPq1wNtMCWUxt17SZbeBqs9V5zcyDqkyguYN39d8qAjZxfFkjJ1+kB4yA==",
+      "version": "5.7.2",
+      "resolved": "https://registry.npmjs.org/tape/-/tape-5.7.2.tgz",
+      "integrity": "sha512-cvSyprYahyOYXbtBwV/B7nrx7kINeZ3VZ9fKoSywoPwZN3oQ1WVLvt+Vl0XCz/gi37CDrY3dlW790nzviIzoPw==",
       "dev": true,
       "requires": {
         "@ljharb/resumer": "^0.0.1",
         "@ljharb/through": "^2.3.11",
         "array.prototype.every": "^1.1.5",
-        "call-bind": "^1.0.2",
+        "call-bind": "^1.0.5",
         "deep-equal": "^2.2.2",
         "defined": "^1.0.1",
         "dotignore": "^0.1.2",
         "for-each": "^0.3.3",
         "get-package-type": "^0.1.0",
         "glob": "^7.2.3",
-        "has": "^1.0.3",
         "has-dynamic-import": "^2.0.1",
+        "hasown": "^2.0.0",
         "inherits": "^2.0.4",
         "is-regex": "^1.1.4",
         "minimist": "^1.2.8",
-        "mock-property": "^1.0.0",
-        "object-inspect": "^1.12.3",
+        "mock-property": "^1.0.2",
+        "object-inspect": "^1.13.1",
         "object-is": "^1.1.5",
         "object-keys": "^1.1.1",
         "object.assign": "^4.1.4",
