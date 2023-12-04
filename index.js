@@ -25,6 +25,11 @@ const handleInput = async (inputFilepath, options) => {
   }
 
   const input = findMap(inputFilepath);
+  if (!input) {
+    console.error(`Could not find sourceMap from "${inputFilepath}"`);
+
+    return [];
+  }
 
   const output = await readSources(input, {
     verbose: typeof options.verbose === 'boolean' ?

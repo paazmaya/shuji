@@ -5,9 +5,13 @@ It follows the guidance from https://keepachangelog.com/en/1.0.0/.
 
 ## Unreleased
 
-## `v0.8.0` (2023-06-05)
+## `v0.8.0` (2023-12-04)
 
+- New option `--preserve` by @rodrigograca31 via #39. Thank you!
 - Minimum supported Node.js version lifted from `10.13.0` to `14.15.0`
+- Converted to ESM (EcmaScript Modules) syntax
+- Using `c8` to gather unit test coverage information, instead of `nyc`
+- Dependencies up to date
 
 ## `v0.7.0` (2021-02-16)
 - Minimum Node.js version lifted from `8.11.1` to `10.13.0`
