@@ -10,7 +10,7 @@
  * Licensed under the MIT license
  */
 
-import path from 'path';
+import path from 'node:path';
 
 import optionator from 'optionator';
 import fs from 'fs-extra';

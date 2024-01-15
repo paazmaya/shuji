@@ -8,10 +8,10 @@
  * Licensed under the MIT license
  */
 
-import fs from 'fs';
+import fs from 'node:fs';
 import {
   execFile
-} from 'child_process';
+} from 'node:child_process';
 
 import tape from 'tape';
 
