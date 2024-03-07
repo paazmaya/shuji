@@ -27,7 +27,7 @@ tape('readSources - nothing', async (test) => {
   test.deepEqual(Object.keys(output), ['stretchy.scss', '_svg.scss']);
 });
 
-tape('readSources - something', async (test) => {
+tape('readSources - everything', async (test) => {
   test.plan(1);
 
   const input = fs.readFileSync('tests/fixtures/stretchy-with-sources.min.js.map', 'utf8');
@@ -38,4 +38,17 @@ tape('readSources - something', async (test) => {
   const output = await readSources(input, options);
 
   test.deepEqual(Object.keys(output), ['stretchy.js']);
+});
+
+tape('readSources - something', async (test) => {
+  test.plan(1);
+
+  const input = fs.readFileSync('tests/fixtures/main.931f74c5.js.map', 'utf8');
+  const options = {
+    verbose: true
+  };
+
+  const output = await readSources(input, options);
+
+  test.deepEqual(Object.keys(output), ['index.js']);
 });
