@@ -38,7 +38,7 @@
   "homepage": "https://github.com/paazmaya/shuji#readme",
   "dependencies": {
     "fs-extra": "11.2.0",
-    "optionator": "0.9.3",
+    "optionator": "0.9.4",
     "source-map": "0.7.4"
   },
   "devDependencies": {
