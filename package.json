@@ -48,6 +48,6 @@
     "eslint-config-paazmaya": "9.0.1",
     "eslint-plugin-n": "17.13.2",
     "c8": "9.1.0",
-    "tape": "5.8.1"
+    "tape": "5.9.0"
   }
 }
