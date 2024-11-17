@@ -17,7 +17,7 @@
         "shuji": "bin/shuji.js"
       },
       "devDependencies": {
-        "@babel/eslint-parser": "7.25.7",
+        "@babel/eslint-parser": "7.25.9",
         "c8": "9.1.0",
         "codecov": "3.8.3",
         "eslint": "8.57.0",
@@ -98,9 +98,9 @@
       }
     },
     "node_modules/@babel/eslint-parser": {
-      "version": "7.25.7",
-      "resolved": "https://registry.npmjs.org/@babel/eslint-parser/-/eslint-parser-7.25.7.tgz",
-      "integrity": "sha512-B+BO9x86VYsQHimucBAL1fxTJKF4wyKY6ZVzee9QgzdZOUfs3BaR6AQrgoGrRI+7IFS1wUz/VyQ+SoBcSpdPbw==",
+      "version": "7.25.9",
+      "resolved": "https://registry.npmjs.org/@babel/eslint-parser/-/eslint-parser-7.25.9.tgz",
+      "integrity": "sha512-5UXfgpK0j0Xr/xIdgdLEhOFxaDZ0bRPWJJchRpqOSur/3rZoPbqqki5mm0p4NE2cs28krBEiSM2MB7//afRSQQ==",
       "dev": true,
       "dependencies": {
         "@nicolo-ribaudo/eslint-scope-5-internals": "5.1.1-v1",
@@ -113,15 +113,6 @@
       "peerDependencies": {
         "@babel/core": "^7.11.0",
         "eslint": "^7.5.0 || ^8.0.0 || ^9.0.0"
-      }
-    },
-    "node_modules/@babel/eslint-parser/node_modules/eslint-visitor-keys": {
-      "version": "2.1.0",
-      "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz",
-      "integrity": "sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==",
-      "dev": true,
-      "engines": {
-        "node": ">=10"
       }
     },
     "node_modules/@babel/generator": {
@@ -1648,6 +1639,15 @@
       },
       "funding": {
         "url": "https://opencollective.com/eslint"
+      }
+    },
+    "node_modules/eslint-visitor-keys": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz",
+      "integrity": "sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==",
+      "dev": true,
+      "engines": {
+        "node": ">=10"
       }
     },
     "node_modules/eslint/node_modules/ansi-styles": {
@@ -4166,22 +4166,14 @@
       }
     },
     "@babel/eslint-parser": {
-      "version": "7.25.7",
-      "resolved": "https://registry.npmjs.org/@babel/eslint-parser/-/eslint-parser-7.25.7.tgz",
-      "integrity": "sha512-B+BO9x86VYsQHimucBAL1fxTJKF4wyKY6ZVzee9QgzdZOUfs3BaR6AQrgoGrRI+7IFS1wUz/VyQ+SoBcSpdPbw==",
+      "version": "7.25.9",
+      "resolved": "https://registry.npmjs.org/@babel/eslint-parser/-/eslint-parser-7.25.9.tgz",
+      "integrity": "sha512-5UXfgpK0j0Xr/xIdgdLEhOFxaDZ0bRPWJJchRpqOSur/3rZoPbqqki5mm0p4NE2cs28krBEiSM2MB7//afRSQQ==",
       "dev": true,
       "requires": {
         "@nicolo-ribaudo/eslint-scope-5-internals": "5.1.1-v1",
         "eslint-visitor-keys": "^2.1.0",
         "semver": "^6.3.1"
-      },
-      "dependencies": {
-        "eslint-visitor-keys": {
-          "version": "2.1.0",
-          "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz",
-          "integrity": "sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==",
-          "dev": true
-        }
       }
     },
     "@babel/generator": {
@@ -5395,6 +5387,12 @@
         "esrecurse": "^4.3.0",
         "estraverse": "^5.2.0"
       }
+    },
+    "eslint-visitor-keys": {
+      "version": "2.1.0",
+      "resolved": "https://registry.npmjs.org/eslint-visitor-keys/-/eslint-visitor-keys-2.1.0.tgz",
+      "integrity": "sha512-0rSmRBzXgDzIsD6mGdJgevzgezI534Cer5L/vyMX0kHzT/jiB43jRhd9YUlMGYLQy2zprNmoT8qasCGtY+QaKw==",
+      "dev": true
     },
     "espree": {
       "version": "9.6.1",
