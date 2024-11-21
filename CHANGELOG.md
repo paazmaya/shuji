@@ -5,6 +5,8 @@ It follows the guidance from https://keepachangelog.com/en/1.0.0/.
 
 ## Unreleased
 
+- Minimum supported Node.js version lifted from `14.15.0` to `22.11.0`
+
 ## `v0.8.0` (2023-12-04)
 
 - New option `--preserve` by @rodrigograca31 via #39. Thank you!
