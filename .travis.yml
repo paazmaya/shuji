@@ -3,7 +3,7 @@ version: ~> 1.0
 
 language: node_js
 node_js:
-  - "20"
+  - "22"
 cache:
   directories:
     - node_modules
