@@ -85,7 +85,7 @@ tape('cli should accept single JS file', (test) => {
 tape('cli should read match argument', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin[pkg.name], '-o', 'tmp/inline', '-v', '--match', '\\\.min\\\.js$', 'tests/fixtures'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '-o', 'tmp/inline', '-v', '--match', "\\.min\\.js$", 'tests/fixtures'], null, (error, stdout) => {
     if (error) {
       test.fail(error);
     }
