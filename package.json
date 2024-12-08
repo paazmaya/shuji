@@ -44,7 +44,7 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.25.9",
     "codecov": "3.8.3",
-    "eslint": "8.57.0",
+    "eslint": "8.57.1",
     "eslint-config-paazmaya": "9.0.1",
     "eslint-plugin-n": "17.13.2",
     "c8": "9.1.0",
