@@ -4,7 +4,9 @@
   "description": "Reverse engineering JavaScript and CSS sources from sourcemaps",
   "main": "index.js",
   "type": "module",
-  "bin": "bin/shuji.js",
+  "bin": {
+    "shuji": "bin/shuji.js"
+  },
   "scripts": {
     "lint": "eslint *.js bin lib",
     "test": "c8 --exclude tests --exclude tmp tape tests/*_test.js tests/lib/*_test.js && rm -rf tmp",
