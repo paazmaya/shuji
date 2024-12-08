@@ -1,5 +1,5 @@
 import paazmaya from 'eslint-config-paazmaya';
-import node from 'eslint-plugin-node';
+import node from 'eslint-plugin-n';
 
 export default [
   paazmaya,
