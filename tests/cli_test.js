@@ -35,6 +35,7 @@ tape('cli should output help by default', (test) => {
   test.plan(1);
 
   execFile('node', [pkg.bin[pkg.name]], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name]], null, (error, stdout) => {
     if (error) {
       test.fail(error);
     }
@@ -71,7 +72,7 @@ tape('cli should create folder for output', (test) => {
 tape('cli should accept single JS file', (test) => {
   test.plan(3);
 
-  execFile('node', [pkg.bin[pkg.name], '-v', '-M', '.js', '-o', 'tmp/command', 'tests/fixtures/stretchy-inline-sources.min.js'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '-v', '-M', '.js', '-o', 'tmp/command', 'tests/fixtures/stretchy-inline-sources.min.js'], null, (error) => {
     if (error) {
       test.fail(error);
     }
@@ -85,12 +86,11 @@ tape('cli should accept single JS file', (test) => {
 tape('cli should read match argument', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin[pkg.name], '-o', 'tmp/inline', '-v', '--match', "\\.min\\.js$", 'tests/fixtures'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '-o', 'tmp/inline', '-v', '--match', '\\.min\\.js$', 'tests/fixtures'], null, (error) => {
     if (error) {
       test.fail(error);
     }
     test.ok(fs.existsSync('tmp/inline'), 'Temporary inline folder exists');
-    // console.log(stdout);
   });
 
 });
@@ -98,7 +98,7 @@ tape('cli should read match argument', (test) => {
 tape('cli should preserve folder structure', (test) => {
   test.plan(4);
 
-  execFile('node', [pkg.bin[pkg.name], '-o', 'tmp/preserve-folder-structure', '-v', 'tests/fixtures/preserve-folder-structure.min.js.map', '--preserve'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '-o', 'tmp/preserve-folder-structure', '-v', 'tests/fixtures/preserve-folder-structure.min.js.map', '--preserve'], null, (error) => {
     if (error) {
       test.fail(error);
     }
@@ -106,7 +106,6 @@ tape('cli should preserve folder structure', (test) => {
     test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/my-webpack-project/classes'), 'Temporary classes folder exists');
     test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/my-webpack-project/classes/person.js'), 'Temporary person.js exists');
     test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/my-webpack-project/index.js'), 'Temporary index.js exists');
-    // console.log(stdout);
   });
 
 });
