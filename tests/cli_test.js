@@ -22,7 +22,7 @@ const pkg = JSON.parse(fs.readFileSync(packageFile, 'utf8'));
 tape('cli should output version number', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin, '-V'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '-V'], null, (error, stdout) => {
     if (error) {
       test.fail(error);
     }
@@ -34,7 +34,7 @@ tape('cli should output version number', (test) => {
 tape('cli should output help by default', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name]], null, (error, stdout) => {
     if (error) {
       test.fail(error);
     }
@@ -46,7 +46,7 @@ tape('cli should output help by default', (test) => {
 tape('cli should output help when requested', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin, '--help'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '--help'], null, (error, stdout) => {
     if (error) {
       test.fail(error);
     }
@@ -58,7 +58,7 @@ tape('cli should output help when requested', (test) => {
 tape('cli should create folder for output', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin, '-o', 'tmp/out', 'tests/fixtures', '-v', '-M', '.js'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '-o', 'tmp/out', 'tests/fixtures', '-v', '-M', '.js'], null, (error, stdout) => {
     if (error) {
       test.fail(error);
     }
@@ -71,7 +71,7 @@ tape('cli should create folder for output', (test) => {
 tape('cli should accept single JS file', (test) => {
   test.plan(3);
 
-  execFile('node', [pkg.bin, '-v', '-M', '.js', '-o', 'tmp/command', 'tests/fixtures/stretchy-inline-sources.min.js'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '-v', '-M', '.js', '-o', 'tmp/command', 'tests/fixtures/stretchy-inline-sources.min.js'], null, (error, stdout) => {
     if (error) {
       test.fail(error);
     }
@@ -85,7 +85,7 @@ tape('cli should accept single JS file', (test) => {
 tape('cli should read match argument', (test) => {
   test.plan(1);
 
-  execFile('node', [pkg.bin, '-o', 'tmp/inline', '-v', '--match', '\\\.min\\\.js$', 'tests/fixtures'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '-o', 'tmp/inline', '-v', '--match', '\\\.min\\\.js$', 'tests/fixtures'], null, (error, stdout) => {
     if (error) {
       test.fail(error);
     }
@@ -98,7 +98,7 @@ tape('cli should read match argument', (test) => {
 tape('cli should preserve folder structure', (test) => {
   test.plan(4);
 
-  execFile('node', [pkg.bin, '-o', 'tmp/preserve-folder-structure', '-v', 'tests/fixtures/preserve-folder-structure.min.js.map', '--preserve'], null, (error, stdout) => {
+  execFile('node', [pkg.bin[pkg.name], '-o', 'tmp/preserve-folder-structure', '-v', 'tests/fixtures/preserve-folder-structure.min.js.map', '--preserve'], null, (error, stdout) => {
     if (error) {
       test.fail(error);
     }
