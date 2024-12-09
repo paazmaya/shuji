@@ -45,11 +45,11 @@
   },
   "devDependencies": {
     "@babel/eslint-parser": "7.25.9",
+    "c8": "10.1.2",
     "codecov": "3.8.3",
-    "eslint": "8.57.1",
+    "eslint": "9.16.0",
     "eslint-config-paazmaya": "9.0.1",
     "eslint-plugin-n": "17.14.0",
-    "c8": "10.1.2",
     "tape": "5.9.0"
   }
 }
