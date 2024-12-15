@@ -22,7 +22,7 @@
         "codecov": "3.8.3",
         "eslint": "9.17.0",
         "eslint-config-paazmaya": "9.0.1",
-        "eslint-plugin-n": "17.14.0",
+        "eslint-plugin-n": "17.15.0",
         "tape": "5.9.0"
       },
       "engines": {
@@ -1702,9 +1702,9 @@
       }
     },
     "node_modules/eslint-plugin-n": {
-      "version": "17.14.0",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.14.0.tgz",
-      "integrity": "sha512-maxPLMEA0rPmRpoOlxEclKng4UpDe+N5BJS4t24I3UKnN109Qcivnfs37KMy84G0af3bxjog5lKctP5ObsvcTA==",
+      "version": "17.15.0",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.15.0.tgz",
+      "integrity": "sha512-xF3zJkOfLlFOm5TvmqmsnA9/fO+/z2pYs0dkuKXKN/ymS6UB1yEcaoIkqxLKQ9Dw/WmLX/Tdh6/5ZS5azVixFQ==",
       "dev": true,
       "dependencies": {
         "@eslint-community/eslint-utils": "^4.4.1",
@@ -5356,9 +5356,9 @@
       }
     },
     "eslint-plugin-n": {
-      "version": "17.14.0",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.14.0.tgz",
-      "integrity": "sha512-maxPLMEA0rPmRpoOlxEclKng4UpDe+N5BJS4t24I3UKnN109Qcivnfs37KMy84G0af3bxjog5lKctP5ObsvcTA==",
+      "version": "17.15.0",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.15.0.tgz",
+      "integrity": "sha512-xF3zJkOfLlFOm5TvmqmsnA9/fO+/z2pYs0dkuKXKN/ymS6UB1yEcaoIkqxLKQ9Dw/WmLX/Tdh6/5ZS5azVixFQ==",
       "dev": true,
       "requires": {
         "@eslint-community/eslint-utils": "^4.4.1",
