@@ -22,7 +22,7 @@
         "codecov": "3.8.3",
         "eslint": "9.17.0",
         "eslint-config-paazmaya": "9.0.1",
-        "eslint-plugin-n": "17.15.0",
+        "eslint-plugin-n": "17.15.1",
         "tape": "5.9.0"
       },
       "engines": {
@@ -1705,9 +1705,9 @@
       }
     },
     "node_modules/eslint-plugin-n": {
-      "version": "17.15.0",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.15.0.tgz",
-      "integrity": "sha512-xF3zJkOfLlFOm5TvmqmsnA9/fO+/z2pYs0dkuKXKN/ymS6UB1yEcaoIkqxLKQ9Dw/WmLX/Tdh6/5ZS5azVixFQ==",
+      "version": "17.15.1",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.15.1.tgz",
+      "integrity": "sha512-KFw7x02hZZkBdbZEFQduRGH4VkIH4MW97ClsbAM4Y4E6KguBJWGfWG1P4HEIpZk2bkoWf0bojpnjNAhYQP8beA==",
       "dev": true,
       "dependencies": {
         "@eslint-community/eslint-utils": "^4.4.1",
@@ -1739,9 +1739,9 @@
       }
     },
     "node_modules/eslint-plugin-n/node_modules/globals": {
-      "version": "15.13.0",
-      "resolved": "https://registry.npmjs.org/globals/-/globals-15.13.0.tgz",
-      "integrity": "sha512-49TewVEz0UxZjr1WYYsWpPrhyC/B/pA8Bq0fUmet2n+eR7yn0IvNzNaoBwnK6mdkzcN+se7Ez9zUgULTz2QH4g==",
+      "version": "15.14.0",
+      "resolved": "https://registry.npmjs.org/globals/-/globals-15.14.0.tgz",
+      "integrity": "sha512-OkToC372DtlQeje9/zHIo5CT8lRP/FUgEOKBEhU4e0abL7J7CD24fD9ohiLN5hagG/kWCYj4K5oaxxtj2Z0Dig==",
       "dev": true,
       "engines": {
         "node": ">=18"
@@ -5359,9 +5359,9 @@
       }
     },
     "eslint-plugin-n": {
-      "version": "17.15.0",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.15.0.tgz",
-      "integrity": "sha512-xF3zJkOfLlFOm5TvmqmsnA9/fO+/z2pYs0dkuKXKN/ymS6UB1yEcaoIkqxLKQ9Dw/WmLX/Tdh6/5ZS5azVixFQ==",
+      "version": "17.15.1",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.15.1.tgz",
+      "integrity": "sha512-KFw7x02hZZkBdbZEFQduRGH4VkIH4MW97ClsbAM4Y4E6KguBJWGfWG1P4HEIpZk2bkoWf0bojpnjNAhYQP8beA==",
       "dev": true,
       "requires": {
         "@eslint-community/eslint-utils": "^4.4.1",
@@ -5384,9 +5384,9 @@
           }
         },
         "globals": {
-          "version": "15.13.0",
-          "resolved": "https://registry.npmjs.org/globals/-/globals-15.13.0.tgz",
-          "integrity": "sha512-49TewVEz0UxZjr1WYYsWpPrhyC/B/pA8Bq0fUmet2n+eR7yn0IvNzNaoBwnK6mdkzcN+se7Ez9zUgULTz2QH4g==",
+          "version": "15.14.0",
+          "resolved": "https://registry.npmjs.org/globals/-/globals-15.14.0.tgz",
+          "integrity": "sha512-OkToC372DtlQeje9/zHIo5CT8lRP/FUgEOKBEhU4e0abL7J7CD24fD9ohiLN5hagG/kWCYj4K5oaxxtj2Z0Dig==",
           "dev": true
         },
         "minimatch": {
