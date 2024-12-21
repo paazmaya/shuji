@@ -7,9 +7,11 @@
 [![codecov](https://codecov.io/gh/paazmaya/shuji/branch/master/graph/badge.svg)](https://codecov.io/gh/paazmaya/shuji)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpaazmaya%2Fshuji.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpaazmaya%2Fshuji?ref=badge_shield)
 
-## Background for the name
+## Background for the project name
 
 The name of the project is for honouring the legacy of a certain master from the Ryukyu archipelago who contributed to the martial arts that we today know as **karate** and **ryukyu kobujutsu**.
+
+[Read more about why these martial arts are important for me at `karatejukka.fi`.](https://karatejukka.fi)
 
 ## Getting started
 
