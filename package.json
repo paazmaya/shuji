@@ -10,7 +10,7 @@
   "scripts": {
     "lint": "eslint *.js bin lib",
     "test": "c8 --exclude tests --exclude tmp tape tests/*_test.js tests/lib/*_test.js && rm -rf tmp",
-    "coverage": "c8 --exclude tests --exclude tmp report --reporter=text-lcov > coverage.lcov && codecov"
+    "coverage": "c8 --exclude tests --exclude tmp report --reporter=text-lcov > coverage.lcov"
   },
   "repository": {
     "type": "git",
@@ -46,7 +46,6 @@
   "devDependencies": {
     "@babel/eslint-parser": "7.25.9",
     "c8": "10.1.3",
-    "codecov": "3.8.3",
     "eslint": "9.17.0",
     "eslint-config-paazmaya": "9.0.1",
     "eslint-plugin-n": "17.15.1",
