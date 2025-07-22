@@ -1,4 +1,4 @@
-name: Node.js v22 CI
+name: Node.js CI
 
 on: [push]
 
@@ -10,10 +10,10 @@ jobs:
     steps:
     - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
 
-    - name: Use Node.js v22
+    - name: Use Node.js v24
       uses: actions/setup-node@v4
       with:
-        node-version: '22.x'
+        node-version: '24.x'
 
     - name: Install Node.js dependencies
       run: npm ci
