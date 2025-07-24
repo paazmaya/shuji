@@ -11,7 +11,7 @@
       "dependencies": {
         "fs-extra": "11.3.0",
         "optionator": "0.9.4",
-        "source-map": "0.7.4"
+        "source-map": "0.7.6"
       },
       "bin": {
         "shuji": "bin/shuji.js"
@@ -3467,11 +3467,11 @@
       }
     },
     "node_modules/source-map": {
-      "version": "0.7.4",
-      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.7.4.tgz",
-      "integrity": "sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA==",
+      "version": "0.7.6",
+      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.7.6.tgz",
+      "integrity": "sha512-i5uvt8C3ikiWeNZSVZNWcfZPItFQOsYTUAOkcUPGd8DqDy1uOUikjt5dG+uRlwyvR108Fb9DOd4GvXfT0N2/uQ==",
       "engines": {
-        "node": ">= 8"
+        "node": ">= 12"
       }
     },
     "node_modules/stop-iteration-iterator": {
@@ -6539,9 +6539,9 @@
       "dev": true
     },
     "source-map": {
-      "version": "0.7.4",
-      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.7.4.tgz",
-      "integrity": "sha512-l3BikUxvPOcn5E74dZiq5BGsTb5yEwhaTSzccU6t4sDOH8NWJCstKO5QT2CvtFoK6F0saL7p9xHAqHOlCPJygA=="
+      "version": "0.7.6",
+      "resolved": "https://registry.npmjs.org/source-map/-/source-map-0.7.6.tgz",
+      "integrity": "sha512-i5uvt8C3ikiWeNZSVZNWcfZPItFQOsYTUAOkcUPGd8DqDy1uOUikjt5dG+uRlwyvR108Fb9DOd4GvXfT0N2/uQ=="
     },
     "stop-iteration-iterator": {
       "version": "1.0.0",
