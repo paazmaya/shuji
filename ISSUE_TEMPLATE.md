@@ -8,9 +8,9 @@ How to reproduce with minimal working example.
 
 ### Versions and environment
 
- * Operating system:
- * Node.js:
- * npm:
- * shuji:
+- Operating system:
+- Node.js:
+- npm:
+- shuji:
 
 Thank you and have some :stew:.
