@@ -21,7 +21,7 @@
         "c8": "10.1.3",
         "eslint": "9.39.2",
         "eslint-config-paazmaya": "9.0.1",
-        "eslint-plugin-n": "17.23.2",
+        "eslint-plugin-n": "17.24.0",
         "tape": "5.9.0"
       },
       "engines": {
@@ -1694,9 +1694,9 @@
       }
     },
     "node_modules/eslint-plugin-n": {
-      "version": "17.23.2",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.23.2.tgz",
-      "integrity": "sha512-RhWBeb7YVPmNa2eggvJooiuehdL76/bbfj/OJewyoGT80qn5PXdz8zMOTO6YHOsI7byPt7+Ighh/i/4a5/v7hw==",
+      "version": "17.24.0",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.24.0.tgz",
+      "integrity": "sha512-/gC7/KAYmfNnPNOb3eu8vw+TdVnV0zhdQwexsw6FLXbhzroVj20vRn2qL8lDWDGnAQ2J8DhdfvXxX9EoxvERvw==",
       "dev": true,
       "dependencies": {
         "@eslint-community/eslint-utils": "^4.5.0",
@@ -1732,9 +1732,9 @@
       }
     },
     "node_modules/eslint-plugin-n/node_modules/semver": {
-      "version": "7.7.3",
-      "resolved": "https://registry.npmjs.org/semver/-/semver-7.7.3.tgz",
-      "integrity": "sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==",
+      "version": "7.7.4",
+      "resolved": "https://registry.npmjs.org/semver/-/semver-7.7.4.tgz",
+      "integrity": "sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==",
       "dev": true,
       "bin": {
         "semver": "bin/semver.js"
@@ -5284,9 +5284,9 @@
       }
     },
     "eslint-plugin-n": {
-      "version": "17.23.2",
-      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.23.2.tgz",
-      "integrity": "sha512-RhWBeb7YVPmNa2eggvJooiuehdL76/bbfj/OJewyoGT80qn5PXdz8zMOTO6YHOsI7byPt7+Ighh/i/4a5/v7hw==",
+      "version": "17.24.0",
+      "resolved": "https://registry.npmjs.org/eslint-plugin-n/-/eslint-plugin-n-17.24.0.tgz",
+      "integrity": "sha512-/gC7/KAYmfNnPNOb3eu8vw+TdVnV0zhdQwexsw6FLXbhzroVj20vRn2qL8lDWDGnAQ2J8DhdfvXxX9EoxvERvw==",
       "dev": true,
       "requires": {
         "@eslint-community/eslint-utils": "^4.5.0",
@@ -5307,9 +5307,9 @@
           "dev": true
         },
         "semver": {
-          "version": "7.7.3",
-          "resolved": "https://registry.npmjs.org/semver/-/semver-7.7.3.tgz",
-          "integrity": "sha512-SdsKMrI9TdgjdweUSR9MweHA4EJ8YxHn8DFaDisvhVlUOe4BF1tLD7GAj0lIqWVl+dPb/rExr0Btby5loQm20Q==",
+          "version": "7.7.4",
+          "resolved": "https://registry.npmjs.org/semver/-/semver-7.7.4.tgz",
+          "integrity": "sha512-vFKC2IEtQnVhpT78h1Yp8wzwrf8CM+MzKMHGJZfBtzhZNycRFnXsHk6E5TxIkkMsgNS7mdX3AGB7x2QM2di4lA==",
           "dev": true
         }
       }
