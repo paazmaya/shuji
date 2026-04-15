@@ -8,6 +8,8 @@
  * Licensed under the MIT license
  */
 
+import fs from 'node:fs';
+
 import tape from 'tape';
 
 import writeSources from '../../lib/write-sources.js';
@@ -25,4 +27,18 @@ tape('writeSources - nothing', (test) => {
   const output = writeSources(filename, content, outdir, options);
 
   test.notOk(output);
+});
+
+tape('writeSources - path traversal is blocked', (test) => {
+  test.plan(1);
+
+  const filename = '../../etc/evil.js';
+  const content = 'malicious content';
+  const outdir = 'tmp/write-sources-traversal';
+  const options = {
+    verbose: false
+  };
+
+  writeSources(filename, content, outdir, options);
+  test.notOk(fs.existsSync('tmp/etc/evil.js'), 'File outside outdir was not created');
 });

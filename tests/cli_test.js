@@ -96,16 +96,17 @@ tape('cli should read match argument', (test) => {
 });
 
 tape('cli should preserve folder structure', (test) => {
-  test.plan(4);
+  test.plan(5);
 
   execFile('node', [binary, '-o', 'tmp/preserve-folder-structure', '-v', 'tests/fixtures/preserve-folder-structure.min.js.map', '--preserve'], null, (error) => {
     if (error) {
       test.fail(error);
     }
     test.ok(fs.existsSync('tmp/preserve-folder-structure'), 'Temporary preserve-folder-structure folder exists');
-    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/my-webpack-project/classes'), 'Temporary classes folder exists');
-    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/my-webpack-project/classes/person.js'), 'Temporary person.js exists');
-    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/my-webpack-project/index.js'), 'Temporary index.js exists');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/classes/person.js'), 'person.js exists under classes/');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/index.js'), 'index.js exists at root');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack'), 'webpack folder exists');
+    test.ok(fs.existsSync('tmp/preserve-folder-structure/tests/fixtures/webpack/bootstrap'), 'webpack/bootstrap exists');
   });
 
 });

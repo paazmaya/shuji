@@ -52,3 +52,21 @@ tape('readSources - something', async (test) => {
 
   test.deepEqual(Object.keys(output), ['index.js']);
 });
+
+tape('readSources - preserve strips webpack scheme and namespace', async (test) => {
+  test.plan(1);
+
+  const input = fs.readFileSync('tests/fixtures/preserve-folder-structure.min.js.map', 'utf8');
+  const options = {
+    verbose: false,
+    preserve: true
+  };
+
+  const output = await readSources(input, options);
+
+  test.deepEqual(Object.keys(output).sort(), [
+    'classes/person.js',
+    'index.js',
+    'webpack/bootstrap'
+  ]);
+});
