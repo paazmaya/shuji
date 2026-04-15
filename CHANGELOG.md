@@ -6,6 +6,9 @@ It follows the guidance from https://keepachangelog.com/en/1.0.0/.
 ## Unreleased
 
 - Minimum supported Node.js version lifted from `14.15.0` to `24.12.0`
+- Fixed `--preserve` to normalize sourcemap paths: strip URL scheme prefixes (`webpack://`, `file://`, etc.), webpack namespaces, and leading relative segments (`../`, `./`)
+- Added path traversal protection in file writer to prevent writing outside the output directory
+- Removed leftover debug `console.log` statements from `read-sources.js`
 
 ## `v0.8.0` (2023-12-04)
 

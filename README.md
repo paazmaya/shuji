@@ -40,7 +40,8 @@ Usage: shuji [options] <file|directory>
 
   -h, --help               Help and usage instructions
   -o, --output-dir String  Output directory - default: .
-  -p, --preserve           Preserve sourcemap's original folder structure.
+  -p, --preserve           Preserve sourcemap's original folder structure,
+                           with automatic normalization of source paths.
   -M, --match String       Regular expression for matching and filtering files -
                            default: \.map$
   -v, --verbose            Verbose output, will print which file is currently being
@@ -48,6 +49,32 @@ Usage: shuji [options] <file|directory>
   -V, --version            Version number
 
 Version 0.8.0
+```
+
+### Path normalization with `--preserve`
+
+When using the `--preserve` flag, source paths from the sourcemap are automatically normalized before writing:
+
+- URL scheme prefixes are stripped: `webpack:///`, `webpack://`, `file:///`, `http://`, etc.
+- Webpack named namespaces are stripped: `webpack://my-lib/./src/lib.js` becomes `src/lib.js`
+- Leading relative segments (`../`, `./`) and leading slashes are removed
+- Windows drive letters (`C:\`) and backslashes are normalized
+- Path traversal protection prevents any file from being written outside the output directory
+
+For example, a sourcemap with these sources:
+```
+webpack:///./src/index.js
+webpack://my-lib/./src/lib.js
+../../app/main.js
+```
+
+Will produce this output structure:
+```
+output-dir/
+├── src/
+│   ├── index.js
+│   └── lib.js
+└── app/main.js
 ```
 
 ## Testing
