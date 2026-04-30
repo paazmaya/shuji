@@ -1,0 +1,15 @@
+{
+  "settings": {
+    "jsx_a11y": "plugin"
+  },
+  "rules": {
+    "correctness": "warn",
+    "nursery": "warn"
+  },
+  "env": {
+    "node": true,
+    "browser": true,
+    "es2021": true,
+    "typescript": true
+  }
+}
