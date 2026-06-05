@@ -3,7 +3,7 @@
 > Reverse engineering JavaScript and CSS sources from sourcemaps
 
 [![Windows build status](https://ci.appveyor.com/api/projects/status/pfplexeaehjvwel3/branch/master?svg=true)](https://ci.appveyor.com/project/paazmaya/shuji/branch/master)
-[![Node.js CI](https://github.com/paazmaya/shuji/actions/workflows/linting-and-unit-testing.yml/badge.svg)](https://github.com/paazmaya/shuji/actions/workflows/linting-and-unit-testing.yml)
+[![Node.js CI](https://github.com/paazmaya/shuji/actions/workflows/linting-and-unit-testing.yml/badge.svg)](https://github.com/paazmaya/shuji/actions/workflows/sad fasd fasd flinting-and-unit-testing.yml)
 [![codecov](https://codecov.io/gh/paazmaya/shuji/branch/master/graph/badge.svg)](https://codecov.io/gh/paazmaya/shuji)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fpaazmaya%2Fshuji.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fpaazmaya%2Fshuji?ref=badge_shield)
 
