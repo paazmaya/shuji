@@ -9,7 +9,7 @@
       "version": "0.8.0",
       "license": "MIT",
       "dependencies": {
-        "fs-extra": "11.3.4",
+        "fs-extra": "11.3.5",
         "optionator": "0.9.4",
         "source-map": "0.7.6"
       },
@@ -317,9 +317,6 @@
         "arm64"
       ],
       "dev": true,
-      "libc": [
-        "glibc"
-      ],
       "license": "MIT",
       "optional": true,
       "os": [
@@ -337,9 +334,6 @@
         "arm64"
       ],
       "dev": true,
-      "libc": [
-        "musl"
-      ],
       "license": "MIT",
       "optional": true,
       "os": [
@@ -357,9 +351,6 @@
         "ppc64"
       ],
       "dev": true,
-      "libc": [
-        "glibc"
-      ],
       "license": "MIT",
       "optional": true,
       "os": [
@@ -377,9 +368,6 @@
         "riscv64"
       ],
       "dev": true,
-      "libc": [
-        "glibc"
-      ],
       "license": "MIT",
       "optional": true,
       "os": [
@@ -397,9 +385,6 @@
         "riscv64"
       ],
       "dev": true,
-      "libc": [
-        "musl"
-      ],
       "license": "MIT",
       "optional": true,
       "os": [
@@ -417,9 +402,6 @@
         "s390x"
       ],
       "dev": true,
-      "libc": [
-        "glibc"
-      ],
       "license": "MIT",
       "optional": true,
       "os": [
@@ -437,9 +419,6 @@
         "x64"
       ],
       "dev": true,
-      "libc": [
-        "glibc"
-      ],
       "license": "MIT",
       "optional": true,
       "os": [
@@ -457,9 +436,6 @@
         "x64"
       ],
       "dev": true,
-      "libc": [
-        "musl"
-      ],
       "license": "MIT",
       "optional": true,
       "os": [
@@ -1175,9 +1151,9 @@
       }
     },
     "node_modules/fs-extra": {
-      "version": "11.3.4",
-      "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.4.tgz",
-      "integrity": "sha512-CTXd6rk/M3/ULNQj8FBqBWHYBVYybQ3VPBw0xGKFe3tuH7ytT6ACnvzpIQ3UZtB8yvUKC2cXn1a+x+5EVQLovA==",
+      "version": "11.3.5",
+      "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.5.tgz",
+      "integrity": "sha512-eKpRKAovdpZtR1WopLHxlBWvAgPny3c4gX1G5Jhwmmw4XJj0ifSD5qB5TOo8hmA0wlRKDAOAhEE1yVPgs6Fgcg==",
       "dependencies": {
         "graceful-fs": "^4.2.0",
         "jsonfile": "^6.0.1",
@@ -3701,9 +3677,9 @@
       }
     },
     "fs-extra": {
-      "version": "11.3.4",
-      "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.4.tgz",
-      "integrity": "sha512-CTXd6rk/M3/ULNQj8FBqBWHYBVYybQ3VPBw0xGKFe3tuH7ytT6ACnvzpIQ3UZtB8yvUKC2cXn1a+x+5EVQLovA==",
+      "version": "11.3.5",
+      "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.5.tgz",
+      "integrity": "sha512-eKpRKAovdpZtR1WopLHxlBWvAgPny3c4gX1G5Jhwmmw4XJj0ifSD5qB5TOo8hmA0wlRKDAOAhEE1yVPgs6Fgcg==",
       "requires": {
         "graceful-fs": "^4.2.0",
         "jsonfile": "^6.0.1",
