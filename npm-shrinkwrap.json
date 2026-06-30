@@ -9,7 +9,7 @@
       "version": "0.8.0",
       "license": "MIT",
       "dependencies": {
-        "fs-extra": "11.3.5",
+        "fs-extra": "11.3.6",
         "optionator": "0.9.4",
         "source-map": "0.7.6"
       },
@@ -1089,9 +1089,9 @@
       }
     },
     "node_modules/fs-extra": {
-      "version": "11.3.5",
-      "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.5.tgz",
-      "integrity": "sha512-eKpRKAovdpZtR1WopLHxlBWvAgPny3c4gX1G5Jhwmmw4XJj0ifSD5qB5TOo8hmA0wlRKDAOAhEE1yVPgs6Fgcg==",
+      "version": "11.3.6",
+      "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.6.tgz",
+      "integrity": "sha512-w8ZNZr2mKIc7qeNaQ9AVPT1+iFaI+Avd4xudVOvdDJ8VytREi1Ft5Ih7hd9jjehod8vAM5GMsfQ/TpPf4EyoEA==",
       "dependencies": {
         "graceful-fs": "^4.2.0",
         "jsonfile": "^6.0.1",
@@ -3791,9 +3791,9 @@
       }
     },
     "fs-extra": {
-      "version": "11.3.5",
-      "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.5.tgz",
-      "integrity": "sha512-eKpRKAovdpZtR1WopLHxlBWvAgPny3c4gX1G5Jhwmmw4XJj0ifSD5qB5TOo8hmA0wlRKDAOAhEE1yVPgs6Fgcg==",
+      "version": "11.3.6",
+      "resolved": "https://registry.npmjs.org/fs-extra/-/fs-extra-11.3.6.tgz",
+      "integrity": "sha512-w8ZNZr2mKIc7qeNaQ9AVPT1+iFaI+Avd4xudVOvdDJ8VytREi1Ft5Ih7hd9jjehod8vAM5GMsfQ/TpPf4EyoEA==",
       "requires": {
         "graceful-fs": "^4.2.0",
         "jsonfile": "^6.0.1",
