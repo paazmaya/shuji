@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "c8": "11.0.0",
-    "oxlint": "1.81.0",
+    "oxlint": "1.82.0",
     "tape": "5.10.2"
   }
 }
