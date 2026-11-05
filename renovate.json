@@ -1,13 +1,18 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    "helpers:pinGitHubActionDigests"
   ],
+  "minimumReleaseAge": "5 days",
   "commitBody": "Signed-off-by: {{{gitAuthor}}}",
   "automerge": true,
   "labels": [
     "dependencies"
   ],
+  "minor": {
+    "automerge": true
+  },
   "major": {
     "automerge": false
   }

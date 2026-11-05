@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/paazmaya/shuji.git"
+    "url": "git+https://github.com/paazmaya/shuji.git"
   },
   "keywords": [
     "sourcemap",
@@ -25,11 +25,13 @@
     "bin",
     "lib",
     "npm-shrinkwrap.json",
-    "LICENSE",
-    "README.md",
     "index.js"
   ],
-  "author": "Juga Paazmaya <paazmaya@yahoo.com> (https://paazmaya.fi)",
+  "author": {
+    "name": "Juga Paazmaya",
+    "email": "paazmaya@yahoo.com",
+    "url": "https://paazmaya.fi"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/paazmaya/shuji/issues"
@@ -37,7 +39,7 @@
   "engines": {
     "node": ">=24.12.0"
   },
-  "homepage": "https://github.com/paazmaya/shuji#readme",
+  "homepage": "https://github.com/paazmaya/shuji",
   "dependencies": {
     "fs-extra": "11.4.1",
     "optionator": "0.9.4",
