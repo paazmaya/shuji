@@ -75,17 +75,17 @@ sass stretchy.scss:stretchy-inline.css --embed-source-map
 ```
 
 Unit tests are written with [`tape`](https://github.com/substack/tape) and can be executed with `npm test`.
-Code coverage is inspected with [`nyc`](https://github.com/istanbuljs/nyc) and
+Code coverage is inspected with [`c8`](https://github.com/bcoe/c8) and
 can be executed with `npm run coverage` after running `npm test`.
 Please make sure it is over 90% at all times.
 
 ## Contributing
 
-["A Beginner's Guide to Open Source: The Best Advice for Making your First Contribution"](http://www.erikaheidi.com/blog/a-beginners-guide-to-open-source-the-best-advice-for-making-your-first-contribution/).
+["A Beginner's Guide to Open Source: The Best Advice for Making your First Contribution"](https://www.erikaheidi.com/blog/a-beginners-guide-to-open-source-the-best-advice-for-making-your-first-contribution/).
 
 [Also there is a blog post about "45 Github Issues Dos and Don’ts"](https://davidwalsh.name/45-github-issues-dos-donts).
 
-Linting is done with [ESLint](http://eslint.org) and can be executed with `npm run lint`.
+Linting is done with [Oxlint](https://oxc.rs/docs/guide/usage/linter.html) and can be executed with `npm run lint`.
 There should be no errors appearing after any JavaScript file changes.
 
 Please note that any features or changed will not be merged without working unit tests.
