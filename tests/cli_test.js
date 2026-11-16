@@ -109,3 +109,23 @@ tape('cli should preserve folder structure', (test) => {
   });
 
 });
+
+tape('cli should handle missing files and exit with code 1 when no valid files', (test) => {
+  test.plan(2);
+
+  execFile('node', [binary, '-o', 'tmp/nonexistent-out', 'nonexistent-file.js'], null, (error, stdout, stderr) => {
+    test.ok(error, 'Should error on missing file');
+    test.ok(stderr.includes('Error: File "nonexistent-file.js" not found'), 'Mentions missing file');
+  });
+});
+
+tape('cli should output version with verbose flag', (test) => {
+  test.plan(1);
+
+  execFile('node', [binary, '-V', '-v'], null, (error, stdout) => {
+    if (error) {
+      test.fail(error);
+    }
+    test.ok(stdout.includes(`${pkg.name} v${pkg.version}`), 'Verbose version includes package name');
+  });
+});
