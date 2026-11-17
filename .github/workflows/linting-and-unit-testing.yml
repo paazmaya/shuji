@@ -26,12 +26,12 @@ jobs:
       contents: read
 
     steps:
-    - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+    - uses: chainguard-actions/actions-checkout@37298d8de412b35988dd165ffae45f45b329d365 # v7.0.1
       with:
         persist-credentials: false
 
     - name: Use Node.js v24
-      uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+      uses: chainguard-actions/actions-setup-node@0fc7fd914070e07cca22606e4cab3cfeaf43711d # v7.1.0
       with:
         node-version: '24.x'
 
@@ -45,8 +45,8 @@ jobs:
         npm run coverage
 
     - name: Upload code coverage to codecov
-      # https://github.com/marketplace/actions/codecov
-      uses: codecov/codecov-action@303a32d7a59b442fa8d48b6a1cc6825c09c847a5 # v7.1.1
+      # https://github.com/chainguard-actions/codecov-codecov-action
+      uses: chainguard-actions/codecov-codecov-action@4e95a2ab133962d45d778e4ce39d1e21e4e536de # v7.1.1
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
         files: coverage.lcov
